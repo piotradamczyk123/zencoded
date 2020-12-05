@@ -1,0 +1,116 @@
+
+.navbar{
+    width: 100%;
+    height: 120px;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    padding-left: 82px;
+    padding-right: 82px;
+   
+  
+  }
+  
+  
+  .navul {
+      grid-column: 6/12;
+      list-style: none;
+      display: flex;
+      font-weight: 500;
+      font-size: 3.4rem;
+  }
+  
+  .navli{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+    
+  }
+  
+  .navli:hover{
+  color: white;
+  transition: all 0.2s;
+  
+  }
+  
+  .navli span {
+    position: absolute;
+    
+    left: -15%;
+    width: 130%;
+    height: 100%;
+    z-index: -1;
+    
+  }
+  
+  .navli:hover span{
+    background-color: #BD1717;
+    top:0;
+    transition: all 0.4s;
+    
+  }
+  
+  /* .navli:after{
+    -webkit-transition: all 3s;
+    transition: all 2s;
+  }
+  
+  .navli:hover:after{
+    content: "";
+    position: absolute;
+    left: -10%;
+    width: 120%;
+    height: 100%;
+    background-color: #BD1717;
+    z-index: -1;
+    -webkit-transition: all 3s;
+    transition: all 3s;
+    
+    
+  } */
+  
+  
+  /* .navli:hover{
+   background-color: #BD1717;
+   color: white;
+   
+  } */
+  
+  
+  
+  
+  .navli:not(:last-child){
+    margin-right: 13.305%;
+  }
+  
+  .logowrapper{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    justify-items: center;
+  
+  }
+  
+  
+  .logo{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    grid-column: 1/3;
+    width: 234px; 
+    height: 53px;
+  }
+
+  .link{
+      text-decoration: none;
+      color: #212121;
+  }
+
+  .navli:hover .link{
+    color: white;
+    transition: all 0.2s;
+    
+    }
