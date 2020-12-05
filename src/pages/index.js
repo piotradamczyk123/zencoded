@@ -5,7 +5,7 @@ import Layout from "../components/layout"
 import viewStyles from "../components/modules/index.module.css"
 import {gsap} from "gsap"
 import {ScrollTrigger} from "gsap/ScrollTrigger"
-import { navigate, navigateTo } from 'gatsby'
+import { navigate } from 'gatsby'
 gsap.registerPlugin(ScrollTrigger);
 
 
@@ -147,7 +147,7 @@ return (
                 <li className={viewStyles.redboxtext}>web</li>
                 <li className={viewStyles.redboxtext}>code</li>
             </ul>
-            <a>more</a>
+            
     
             </div>
                 

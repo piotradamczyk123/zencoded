@@ -1,6 +1,6 @@
 import React from "react"
 import Navbar from "../components/navbar"
-import Link from "gatsby"
+
 
 const Layout=({ children }) => {
   return (
