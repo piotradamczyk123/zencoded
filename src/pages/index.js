@@ -104,8 +104,6 @@ return (
             <div ref={textRef} className={viewStyles.leftside}>
             <h1><span>zen</span>coded</h1>
             <p>we code future</p>
-
-            
            
             
 
