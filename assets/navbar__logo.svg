@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <svg width="232px" height="49px" viewBox="0 0 232 49" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+   
     <title>navbar__logo</title>
     <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
         <g id="navbar__logo">
@@ -15,10 +16,10 @@
                 <circle id="Oval-Copy-7" stroke="#000000" stroke-width="0.2" cx="7.9" cy="7.9" r="1.9"></circle>
                 <circle id="Oval-Copy-8" fill="#000000" fill-rule="nonzero" cx="7.9" cy="7.9" r="1"></circle>
             </g>
-            <text id="zen" fill="#000000" fill-rule="nonzero" font-family="Orbitron-Regular_Bold, Orbitron" font-size="32" font-weight="bold">
+            <text id="zen" fill="#000000" fill-rule="nonzero" font-family="Orbitron" font-size="32" font-weight="bold">
                 <tspan x="55.6564667" y="32">zen</tspan>
             </text>
-            <text id="coded" fill="#000000" fill-rule="nonzero" font-family="Orbitron-Regular, Orbitron" font-size="32" font-weight="normal">
+            <text id="coded" fill="#000000" fill-rule="nonzero" font-family="Orbitron" font-size="32" font-weight="normal">
                 <tspan x="121.918117" y="32">coded</tspan>
             </text>
         </g>
