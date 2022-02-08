@@ -1,0 +1,28 @@
+.header {
+  grid-column: 2/3;
+  grid-row: 1/2;
+  display: flex;
+  justify-content: space-between;
+
+  &__links-wrapper {
+    font-size: 3.2rem;
+    font-weight: 300;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    color: #000;
+    display: flex;
+  }
+  &__links-list {
+    list-style: none;
+    display: flex;
+  }
+  &__list-item:not(:last-child) {
+    margin-right: 24px;
+  }
+  &__link {
+    text-decoration: none;
+    color: #000;
+  }
+}
