@@ -16,6 +16,52 @@ $golden-25: 2.59rem;
 $golden-41: 4.189rem;
 $golden-67: 6.78rem;
 
+//TEXT
+
+.paragraph {
+  font-size: $golden-41;
+  padding-bottom: 32px;
+  font-weight: 300;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #000;
+}
+
+.heading-2 {
+  font-size: $golden-67;
+  font-weight: 800;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.03;
+  letter-spacing: normal;
+  color: black;
+}
+
+.heading-3 {
+  font-size: $golden-41;
+  padding-bottom: 32px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #000;
+}
+
+.red-box-highlight {
+  background-color: #c81818;
+  width: 180px;
+  height: 180px;
+}
+
+hr {
+  width: 6px;
+  background-color: #c91818;
+  height: auto;
+}
+
 // RESPONSIVE BREAKPOINTS
 
 *,
@@ -33,4 +79,5 @@ html {
 
 body {
   font-family: nunito-sans, sans-serif;
+  min-height: 100vh;
 }
