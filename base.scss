@@ -1,0 +1,83 @@
+// COLOR VARIABLES
+$red-primary: #c81818;
+
+$background-light: #fff6f6;
+
+$color-grey-light-1: #f9f7f6;
+$color-grey-light-2: #aaa;
+
+$color-grey-dark-1: #54483a;
+$color-grey-dark-2: #6d5d4b;
+
+// FONT VARIABLES
+$font-primary: nunito-sans, sans-serif;
+
+$golden-25: 2.59rem;
+$golden-41: 4.189rem;
+$golden-67: 6.78rem;
+
+//TEXT
+
+.paragraph {
+  font-size: $golden-41;
+  padding-bottom: 32px;
+  font-weight: 300;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #000;
+}
+
+.heading-2 {
+  font-size: $golden-67;
+  font-weight: 800;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.03;
+  letter-spacing: normal;
+  color: black;
+}
+
+.heading-3 {
+  font-size: $golden-41;
+  padding-bottom: 32px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #000;
+}
+
+.red-box-highlight {
+  background-color: #c81818;
+  width: 180px;
+  height: 180px;
+}
+
+hr {
+  width: 6px;
+  background-color: #c91818;
+  height: auto;
+}
+
+// RESPONSIVE BREAKPOINTS
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%; // 10px/16px = 62.5% -> 1rem = 10px
+}
+
+body {
+  font-family: nunito-sans, sans-serif;
+  min-height: 100vh;
+}

@@ -1,0 +1,78 @@
+@import "base";
+
+.hero {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 20px;
+  height: calc(100vh - 60px);
+
+  &__textwrapper {
+    grid-column: 1/2;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  &__boxwrapper {
+    grid-column: 2/3;
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  &__box {
+    width: 100%;
+    height: 100%;
+    display: grid;
+    place-items: center;
+    grid-template-columns: 1fr;
+  }
+  &__circle-main {
+    width: 140px;
+    height: 140px;
+    grid-column: 1/2;
+    grid-row: 1/2;
+    z-index: 20;
+  }
+
+  &__red-rectangle {
+    grid-column: 1/2;
+    grid-row: 1/2;
+    width: 320px;
+    height: 320px;
+    background-color: $red-primary;
+    z-index: 10;
+  }
+
+  &__black-rectangle {
+    position: relative;
+    top: 20px;
+    right: 20px;
+    grid-column: 1/2;
+    grid-row: 1/2;
+    width: 320px;
+    height: 320px;
+    background-color: black;
+  }
+
+  &__heading {
+    font-size: $golden-67;
+    font-weight: 800;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.03;
+    letter-spacing: normal;
+    color: #070101;
+  }
+
+  &__sub-heading {
+    font-size: $golden-25;
+    font-weight: 300;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.35;
+    letter-spacing: normal;
+    color: #070101;
+    width: 85%;
+    margin-top: 32px;
+  }
+}
