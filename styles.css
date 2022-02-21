@@ -285,9 +285,8 @@ body {
 /* main container + header */
 .container {
   display: grid;
-  grid-template-columns: 82px 1fr 82px;
+  grid-template-columns: 1fr;
   grid-template-rows: 60px 1fr 500px;
-  max-width: 1440px;
   margin: 0 auto;
   overflow-x: hidden;
 }
@@ -322,38 +321,38 @@ body {
 }
 
 .what-section-1 {
+  width: 100%;
+  position: relative;
+}
+.what-section-1__content-wrapper {
   display: grid;
   position: relative;
-  margin-top: 164px;
-  place-items: center;
+  clip-path: polygon(80 20 0 100 100 0 20 80);
   grid-template-columns: 7fr 5fr;
   column-gap: 20px;
   padding-top: 240px;
   padding-bottom: 140px;
+  max-width: 1440px;
+}
+.what-section-1__computer {
   width: 100%;
+}
+.what-section-1__text-wrapper {
+  display: flex;
+  flex-direction: column;
+  padding-left: 46px;
 }
 
 .what-section-1::after {
   position: absolute;
-  content: "";
-  background-color: #fff6f6;
   z-index: -10;
-  height: 120%;
-  top: -50px;
-  width: 100vw;
-  left: 50%;
-  right: 50%;
-  margin-left: -50vw;
-  margin-right: -50vw;
-  clip-path: polygon(0 0%, 100% 20%, 100% 100%, 0% 80%);
-}
-.what-section-1::after__computer {
+  top: 0;
+  left: 0;
+  content: "";
   width: 100%;
-}
-.what-section-1::after__text-wrapper {
-  display: flex;
-  flex-direction: column;
-  padding-left: 46px;
+  height: 100%;
+  background-color: #fff6f6;
+  clip-path: polygon(0 0%, 100% 20%, 100% 100%, 0% 80%);
 }
 
 .what-section-2 {
@@ -409,8 +408,11 @@ body {
 }
 
 .what-section-3 {
+  width: 100%;
   position: relative;
   margin-top: 400px;
+}
+.what-section-3__content-wrapper {
   display: grid;
   grid-template-columns: 7fr 5fr;
   column-gap: 20px;
@@ -436,15 +438,14 @@ body {
 .what-section-3::after {
   position: absolute;
   content: "";
-  background-color: #fff6f6;
+  position: absolute;
   z-index: -10;
-  height: 70%;
-  top: -50px;
-  width: 100vw;
-  left: 50%;
-  right: 50%;
-  margin-left: -50vw;
-  margin-right: -50vw;
+  top: 0;
+  left: 0;
+  content: "";
+  width: 100%;
+  height: 100%;
+  background-color: #fff6f6;
   clip-path: polygon(0 0%, 100% 20%, 100% 100%, 0% 80%);
 }
 
@@ -621,6 +622,10 @@ body {
 }
 
 .projects-section-1 {
+  width: 100%;
+  position: relative;
+}
+.projects-section-1__content-wrapper {
   position: relative;
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -652,11 +657,7 @@ body {
   z-index: -10;
   height: 70%;
   top: 55%;
-  width: 100vw;
-  left: 50%;
-  right: 50%;
-  margin-left: -50vw;
-  margin-right: -50vw;
+  width: 100%;
   clip-path: polygon(0 40%, 100% 0%, 100% 60%, 0% 100%);
 }
 
@@ -835,12 +836,7 @@ body {
   content: "";
   background-color: #c81818;
   z-index: -20;
-  height: 100%;
-  width: 100vw;
-  left: 50%;
-  right: 50%;
-  margin-left: -50vw;
-  margin-right: -50vw;
+  width: 100%;
 }
 
 /*# sourceMappingURL=styles.css.map */
