@@ -3,6 +3,12 @@
   grid-row: 1/2;
   display: flex;
   justify-content: space-between;
+  max-width: 1440px;
+  padding-left: 8rem;
+  padding-right: 8rem;
+  padding-top: 1.6rem;
+
+  margin: 0 auto;
 
   &__links-wrapper {
     font-size: 3.2rem;

@@ -1,10 +1,13 @@
 @import "base";
 
 .hero {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  column-gap: 20px;
-  height: calc(100vh - 60px);
+  &__content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 20px;
+    height: calc(100vh - 60px);
+    margin: 0 auto;
+  }
 
   &__textwrapper {
     grid-column: 1/2;
