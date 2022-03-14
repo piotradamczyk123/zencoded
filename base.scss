@@ -26,7 +26,6 @@ $golden-67: 6.78rem;
   font-style: normal;
   line-height: normal;
   letter-spacing: normal;
-  color: #000;
 }
 
 .heading-2 {
@@ -48,6 +47,16 @@ $golden-67: 6.78rem;
   line-height: normal;
   letter-spacing: normal;
   color: #000;
+}
+
+.heading-4 {
+  font-size: $golden-41;
+
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
 }
 
 .red-box-highlight {
