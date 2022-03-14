@@ -11,6 +11,7 @@
   margin: 0 auto;
 
   &__links-wrapper {
+    position: relative;
     font-size: 3.2rem;
     font-weight: 300;
     font-stretch: normal;
@@ -30,5 +31,28 @@
   &__link {
     text-decoration: none;
     color: #000;
+  }
+}
+
+.hamburger {
+  position: absolute;
+  left: 95%;
+  top: 25%;
+  visibility: hidden;
+  display: flex;
+  flex-direction: column;
+
+  gap: 6px;
+
+  &__line {
+    width: 24px;
+
+    border: solid 2px black;
+    height: 2px;
+    z-index: 200;
+  }
+
+  &--active {
+    visibility: visible;
   }
 }

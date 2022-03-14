@@ -74,6 +74,47 @@ body {
   min-height: 100vh;
 }
 
+@media only screen and (max-width: 1000px) {
+  .heading-2 {
+    font-size: 6.78rem;
+    font-weight: 800;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.03;
+    letter-spacing: normal;
+    color: black;
+  }
+
+  .heading-3 {
+    font-size: 4.189rem;
+    padding-bottom: 32px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    color: #000;
+  }
+
+  .heading-4 {
+    font-size: 4.189rem;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+  }
+
+  .paragraph {
+    font-size: 2.59rem;
+    padding-bottom: 32px;
+    font-weight: 300;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+  }
+}
 .header {
   grid-column: 2/3;
   grid-row: 1/2;
@@ -86,6 +127,7 @@ body {
   margin: 0 auto;
 }
 .header__links-wrapper {
+  position: relative;
   font-size: 3.2rem;
   font-weight: 300;
   font-stretch: normal;
@@ -105,6 +147,25 @@ body {
 .header__link {
   text-decoration: none;
   color: #000;
+}
+
+.hamburger {
+  position: absolute;
+  left: 95%;
+  top: 25%;
+  visibility: hidden;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+.hamburger__line {
+  width: 24px;
+  border: solid 2px black;
+  height: 2px;
+  z-index: 200;
+}
+.hamburger--active {
+  visibility: visible;
 }
 
 .paragraph {
@@ -183,6 +244,47 @@ body {
   min-height: 100vh;
 }
 
+@media only screen and (max-width: 1000px) {
+  .heading-2 {
+    font-size: 6.78rem;
+    font-weight: 800;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.03;
+    letter-spacing: normal;
+    color: black;
+  }
+
+  .heading-3 {
+    font-size: 4.189rem;
+    padding-bottom: 32px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    color: #000;
+  }
+
+  .heading-4 {
+    font-size: 4.189rem;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+  }
+
+  .paragraph {
+    font-size: 2.59rem;
+    padding-bottom: 32px;
+    font-weight: 300;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+  }
+}
 .hero__content {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -330,6 +432,47 @@ body {
   min-height: 100vh;
 }
 
+@media only screen and (max-width: 1000px) {
+  .heading-2 {
+    font-size: 6.78rem;
+    font-weight: 800;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.03;
+    letter-spacing: normal;
+    color: black;
+  }
+
+  .heading-3 {
+    font-size: 4.189rem;
+    padding-bottom: 32px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    color: #000;
+  }
+
+  .heading-4 {
+    font-size: 4.189rem;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+  }
+
+  .paragraph {
+    font-size: 2.59rem;
+    padding-bottom: 32px;
+    font-weight: 300;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+  }
+}
 /* main container + header */
 .container {
   margin: 0 auto;
@@ -471,6 +614,7 @@ body {
 .what-section-3__phone {
   position: relative;
   top: -50rem;
+  width: 90%;
 }
 .what-section-3__text-wrapper {
   display: flex;
@@ -662,14 +806,14 @@ body {
   background-color: #fff6f6;
 }
 .card__title-wrapper {
-  max-width: 60ch;
+  max-width: 58ch;
   margin-bottom: 16px;
 }
 .card__title {
   margin-bottom: 4px;
 }
 .card__content-wrapper {
-  max-width: 60ch;
+  max-width: 58ch;
 }
 .card__line {
   width: 100%;
@@ -848,6 +992,12 @@ body {
   z-index: 30;
   margin-bottom: 3.2rem;
 }
+.contact-section-1__img-left {
+  width: 100%;
+}
+.contact-section-1__img-right {
+  width: 100%;
+}
 
 .contact-section-2 {
   background-color: #c81818;
@@ -860,6 +1010,7 @@ body {
 .contact-section-2__contact-svg {
   justify-self: start;
   align-self: center;
+  width: 100%;
 }
 .contact-section-2__content-wrapper {
   position: relative;
@@ -988,6 +1139,20 @@ body {
 }
 .footer__icon:not(:last-child) {
   margin-right: 3.2rem;
+}
+
+@media only screen and (max-width: 1000px) {
+  .card__title-wrapper {
+    max-width: 54ch;
+    margin-bottom: 16px;
+  }
+  .card__content-wrapper {
+    max-width: 54ch;
+  }
+
+  .card:not(:first-child) {
+    margin-left: -280px;
+  }
 }
 
 /*# sourceMappingURL=styles.css.map */
