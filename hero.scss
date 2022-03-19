@@ -5,12 +5,14 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     column-gap: 20px;
-    height: calc(100vh - 60px);
+
+    height: 100vh;
     margin: 0 auto;
   }
 
   &__textwrapper {
     grid-column: 1/2;
+
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -73,9 +75,50 @@
     font-stretch: normal;
     font-style: normal;
     line-height: 1.35;
+
     letter-spacing: normal;
     color: #070101;
     width: 85%;
     margin-top: 32px;
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  .hero {
+    &__content {
+      grid-template-columns: 1fr;
+    }
+
+    &__textwrapper {
+      grid-column: 1/2;
+      text-align: center;
+    }
+
+    &__boxwrapper {
+      grid-column: 1/2;
+    }
+  }
+}
+@media only screen and (max-width: 900px) {
+  .hero {
+    text-align: center;
+    &__sub-heading {
+      font-size: 0.987rem;
+    }
+
+    &__red-rectangle {
+      width: 160px;
+      height: 160px;
+    }
+
+    &__black-rectangle {
+      width: 160px;
+      height: 160px;
+    }
+
+    &__circle-main {
+      width: 70px;
+      height: 70px;
+    }
   }
 }

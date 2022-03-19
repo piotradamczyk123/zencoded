@@ -29,6 +29,20 @@ $golden-67: 6.78rem;
   letter-spacing: normal;
 }
 
+.hero__heading {
+  font-size: $golden-67;
+  font-weight: 800;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.03;
+  letter-spacing: normal;
+  color: #070101;
+
+  @media only screen and (max-width: 900px) {
+    font-size: $golden-25;
+  }
+}
+
 .heading-2 {
   font-size: $golden-67;
   font-weight: 800;
@@ -76,8 +90,8 @@ hr {
 
 .content-wrapper {
   max-width: 1440px;
-  padding-left: 8rem;
-  padding-right: 8rem;
+  padding-left: 2%;
+  padding-right: 2%;
 }
 
 //Margins&padding
@@ -104,7 +118,7 @@ body {
   min-height: 100vh;
 }
 
-@media only screen and (max-width: 1000px) {
+@media only screen and (max-width: 1100px) {
   .heading-2 {
     font-size: $golden-67;
     font-weight: 800;
@@ -144,5 +158,54 @@ body {
     font-style: normal;
     line-height: normal;
     letter-spacing: normal;
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  .heading-2 {
+    font-size: $golden-25;
+    font-weight: 800;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.03;
+    letter-spacing: normal;
+    color: black;
+  }
+
+  .heading-3 {
+    font-size: $golden-25;
+    padding-bottom: 32px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    color: #000;
+  }
+
+  .heading-4 {
+    font-size: $golden-25;
+
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+  }
+
+  .paragraph {
+    font-size: 1.6rem;
+    padding-bottom: 32px;
+    font-weight: 300;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+  }
+
+  .red-box-highlight {
+    background-color: #c81818;
+    width: 90px;
+    height: 90px;
   }
 }
