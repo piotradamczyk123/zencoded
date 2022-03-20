@@ -2,12 +2,20 @@
 
 .hero {
   &__content {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    column-gap: 20px;
-
-    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
     margin: 0 auto;
+
+    @media screen and (min-width: 900px) {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      column-gap: 20px;
+      min-height: 100vh;
+      margin: 0 auto;
+    }
   }
 
   &__textwrapper {
@@ -16,6 +24,7 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
   }
 
   &__boxwrapper {
@@ -50,8 +59,11 @@
 
   &__black-rectangle {
     position: relative;
-    top: 20px;
-    right: 20px;
+    top: 10px;
+    right: 10px;
+
+    // top: 20px;
+    // right: 20px;
     grid-column: 1/2;
     grid-row: 1/2;
     width: 320px;
@@ -79,7 +91,9 @@
     letter-spacing: normal;
     color: #070101;
     width: 85%;
-    margin-top: 32px;
+    // margin-top: 32px;
+    margin-top: 1em;
+    margin-bottom: 4em;
   }
 }
 
@@ -102,6 +116,11 @@
 @media only screen and (max-width: 900px) {
   .hero {
     text-align: center;
+
+    &__content-wrapper {
+      grid-template-columns: 1fr;
+    }
+
     &__sub-heading {
       font-size: 0.987rem;
     }

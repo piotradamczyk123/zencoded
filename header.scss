@@ -10,7 +10,7 @@
   margin-right: auto;
   display: grid;
   grid-template-columns: 60px 60px;
-  justify-content: left;
+  justify-content: space-between;
   max-width: 1440px;
 
   padding-left: 8rem;
@@ -18,6 +18,13 @@
   padding-top: 1.6rem;
   background-color: white;
   z-index: 100;
+
+  &__logo-svg {
+    width: 160px;
+    @media only screen and (min-width: 900px) {
+      width: 180px;
+    }
+  }
 
   &__links-wrapper {
     grid-column: 3/4;
@@ -45,7 +52,7 @@
   &__link {
     text-decoration: none;
     color: #000;
-    transition: all 0.5s ease;
+    transition: all 0.7s ease;
   }
 
   &__checkbox,
@@ -122,6 +129,7 @@
 
   &__checkbox:checked ~ &__links-wrapper &__links-list &__link {
     opacity: 1;
+    visibility: visible;
   }
 
   &__background {
@@ -175,6 +183,8 @@
       text-decoration: none;
       color: white;
       font-size: $golden-41;
+      opacity: 0;
+      visibility: hidden;
     }
   }
 }
