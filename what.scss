@@ -72,12 +72,12 @@
   &__text-wrapper {
     display: flex;
     flex-direction: row;
-    padding-left: 3.2rem;
+    // padding-left: 3.2rem;
   }
   &__text-wrapper-sub {
     display: flex;
     flex-direction: column;
-    padding-left: 46px;
+    // padding-left: 46px;
   }
 }
 
@@ -96,12 +96,16 @@
 
 .what-section-2 {
   &__content-wrapper {
-    margin-top: 28rem;
-    display: grid;
-    column-gap: 20px;
-    place-items: center;
-    grid-template-columns: 1fr 1fr;
-    column-gap: 20px;
+    // margin-top: 28rem;
+    // display: grid;
+    // column-gap: 20px;
+    // place-items: center;
+    // grid-template-columns: 1fr 1fr;
+    // column-gap: 20px;
+    max-width: 1440px;
+    width: 90%;
+    margin: 0 auto;
+    text-align: center;
   }
 
   &__text-wrapper {
@@ -116,7 +120,7 @@
   }
 
   &__paragraph {
-    padding-right: 54px;
+    // padding-right: 54px;
   }
 }
 
@@ -128,7 +132,7 @@
   width: auto;
   height: auto;
   position: relative;
-  bottom: 88px;
+  // bottom: 88px;
 
   &__column {
     display: flex;
@@ -136,23 +140,23 @@
     gap: 20px;
   }
   &__img {
-    width: 100%;
-
-    &--col-1 {
-      position: relative;
-      top: 0;
-    }
-
-    &--col-2 {
-      position: relative;
-      bottom: 82px;
-    }
-
-    &--col-3 {
-      position: relative;
-      bottom: 164px;
-    }
+    max-width: 100%;
   }
+  //   &--col-1 {
+  //     position: relative;
+  //     top: 0;
+  //   }
+
+  //   &--col-2 {
+  //     position: relative;
+  //     bottom: 82px;
+  //   }
+
+  //   &--col-3 {
+  //     position: relative;
+  //     bottom: 164px;
+  //   }
+  // }
 }
 
 .what-section-3 {
@@ -276,13 +280,17 @@
 
 .what-section-4 {
   &__content-wrapper {
-    position: relative;
-    margin-bottom: $margin-m;
-    display: grid;
-    grid-template-columns: 7fr 5fr;
-    column-gap: 20px;
+    // position: relative;
+    // margin-bottom: $margin-m;
+    // display: grid;
+    // grid-template-columns: 7fr 5fr;
+    // column-gap: 20px;
 
-    width: 100%;
+    // width: 100%;
+    width: 90%;
+    max-width: 1440px;
+    margin: 0 auto;
+    text-align: center;
   }
 
   &__rectangle-wrapper {
@@ -290,7 +298,7 @@
     display: grid;
     grid-template-columns: 1fr;
     place-items: center;
-    width: 80%;
+    // width: 80%;
   }
 
   &__rectangle {
