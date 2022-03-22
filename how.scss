@@ -171,11 +171,16 @@
     transform: translate(10px, 10px);
   }
 
+  &__card-1:active ~ .card {
+    z-index: 4;
+    transform: translate(10px, 10px);
+  }
+
   &__card-2 {
     z-index: 3;
   }
 
-  &__card-2:hover ~ .card {
+  &__card-2:focus ~ .card {
     z-index: 3;
   }
 
@@ -183,7 +188,7 @@
     z-index: 2;
   }
 
-  &__card-3:hover {
+  &__card-3:focus {
     z-index: 2;
     transform: translate(10px, 10px);
   }
