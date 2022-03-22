@@ -20,48 +20,46 @@ $golden-67: 6.78rem;
 //TEXT
 
 .paragraph {
-  font-size: $golden-41;
-  padding-bottom: 32px;
+  font-size: $golden-16;
+  padding-bottom: 16px;
   font-weight: 300;
   font-stretch: normal;
   font-style: normal;
   line-height: normal;
   letter-spacing: normal;
-}
 
-.hero__heading {
-  font-size: $golden-67;
-  font-weight: 800;
-  font-stretch: normal;
-  font-style: normal;
-  line-height: 1.03;
-  letter-spacing: normal;
-  color: #070101;
-
-  @media only screen and (max-width: 900px) {
-    font-size: $golden-25;
+  @media only screen and (min-width: 900px) {
+    font-size: $golden-41;
   }
 }
 
 .heading-2 {
-  font-size: $golden-67;
+  font-size: $golden-41;
   font-weight: 800;
   font-stretch: normal;
   font-style: normal;
   line-height: 1.03;
   letter-spacing: normal;
   color: black;
+
+  @media only screen and (min-width: 900px) {
+    font-size: $golden-67;
+  }
 }
 
 .heading-3 {
-  font-size: $golden-41;
-  padding-bottom: 32px;
+  font-size: $golden-25;
+
   font-weight: bold;
   font-stretch: normal;
   font-style: normal;
   line-height: normal;
   letter-spacing: normal;
   color: #000;
+
+  @media only screen and (min-width: 900px) {
+    font-size: $golden-41;
+  }
 }
 
 .heading-4 {
@@ -76,14 +74,23 @@ $golden-67: 6.78rem;
 
 .red-box-highlight {
   background-color: #c81818;
-  width: 180px;
-  height: 180px;
+  width: 10rem;
+  height: 10rem;
+  @media screen and (min-width: 900px) {
+    width: 18rem;
+    height: 18rem;
+  }
 }
 
 hr {
   width: 6px;
   background-color: #c91818;
   height: auto;
+  visibility: hidden;
+
+  @media only screen and (min-width: 900px) {
+    visibility: visible;
+  }
 }
 
 //Utility classes
@@ -115,96 +122,4 @@ html {
 body {
   font-family: nunito-sans, sans-serif;
   min-height: 100vh;
-}
-
-@media only screen and (max-width: 1100px) {
-  .heading-2 {
-    font-size: $golden-67;
-    font-weight: 800;
-    font-stretch: normal;
-    font-style: normal;
-    line-height: 1.03;
-    letter-spacing: normal;
-    color: black;
-  }
-
-  .heading-3 {
-    font-size: $golden-41;
-    padding-bottom: 32px;
-    font-weight: bold;
-    font-stretch: normal;
-    font-style: normal;
-    line-height: normal;
-    letter-spacing: normal;
-    color: #000;
-  }
-
-  .heading-4 {
-    font-size: $golden-41;
-
-    font-weight: bold;
-    font-stretch: normal;
-    font-style: normal;
-    line-height: normal;
-    letter-spacing: normal;
-  }
-
-  .paragraph {
-    font-size: $golden-25;
-    padding-bottom: 32px;
-    font-weight: 300;
-    font-stretch: normal;
-    font-style: normal;
-    line-height: normal;
-    letter-spacing: normal;
-  }
-}
-
-@media only screen and (max-width: 900px) {
-  .heading-2 {
-    font-size: $golden-25;
-    font-weight: 800;
-    font-stretch: normal;
-    font-style: normal;
-    line-height: 1.03;
-    letter-spacing: normal;
-    color: black;
-  }
-
-  .heading-3 {
-    font-size: $golden-25;
-    padding-bottom: 32px;
-    font-weight: bold;
-    font-stretch: normal;
-    font-style: normal;
-    line-height: normal;
-    letter-spacing: normal;
-    color: #000;
-  }
-
-  .heading-4 {
-    font-size: $golden-25;
-
-    font-weight: bold;
-    font-stretch: normal;
-    font-style: normal;
-    line-height: normal;
-    letter-spacing: normal;
-  }
-
-  .paragraph {
-    font-size: 1.6rem;
-    padding-bottom: 32px;
-    font-weight: 300;
-    font-stretch: normal;
-    font-style: normal;
-    line-height: normal;
-    letter-spacing: normal;
-  }
-
-  .red-box-highlight {
-    background-color: #c81818;
-    width: 90px;
-    height: 90px;
-  }
 }

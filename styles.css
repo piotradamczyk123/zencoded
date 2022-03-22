@@ -1,30 +1,20 @@
 .paragraph {
-  font-size: 4.189rem;
-  padding-bottom: 32px;
+  font-size: 1.6rem;
+  padding-bottom: 16px;
   font-weight: 300;
   font-stretch: normal;
   font-style: normal;
   line-height: normal;
   letter-spacing: normal;
 }
-
-.hero__heading {
-  font-size: 6.78rem;
-  font-weight: 800;
-  font-stretch: normal;
-  font-style: normal;
-  line-height: 1.03;
-  letter-spacing: normal;
-  color: #070101;
-}
-@media only screen and (max-width: 900px) {
-  .hero__heading {
-    font-size: 2.59rem;
+@media only screen and (min-width: 900px) {
+  .paragraph {
+    font-size: 4.189rem;
   }
 }
 
 .heading-2 {
-  font-size: 6.78rem;
+  font-size: 4.189rem;
   font-weight: 800;
   font-stretch: normal;
   font-style: normal;
@@ -32,16 +22,25 @@
   letter-spacing: normal;
   color: black;
 }
+@media only screen and (min-width: 900px) {
+  .heading-2 {
+    font-size: 6.78rem;
+  }
+}
 
 .heading-3 {
-  font-size: 4.189rem;
-  padding-bottom: 32px;
+  font-size: 2.59rem;
   font-weight: bold;
   font-stretch: normal;
   font-style: normal;
   line-height: normal;
   letter-spacing: normal;
   color: #000;
+}
+@media only screen and (min-width: 900px) {
+  .heading-3 {
+    font-size: 4.189rem;
+  }
 }
 
 .heading-4 {
@@ -55,14 +54,26 @@
 
 .red-box-highlight {
   background-color: #c81818;
-  width: 180px;
-  height: 180px;
+  width: 10rem;
+  height: 10rem;
+}
+@media screen and (min-width: 900px) {
+  .red-box-highlight {
+    width: 18rem;
+    height: 18rem;
+  }
 }
 
 hr {
   width: 6px;
   background-color: #c91818;
   height: auto;
+  visibility: hidden;
+}
+@media only screen and (min-width: 900px) {
+  hr {
+    visibility: visible;
+  }
 }
 
 .content-wrapper {
@@ -88,121 +99,23 @@ body {
   min-height: 100vh;
 }
 
-@media only screen and (max-width: 1100px) {
-  .heading-2 {
-    font-size: 6.78rem;
-    font-weight: 800;
-    font-stretch: normal;
-    font-style: normal;
-    line-height: 1.03;
-    letter-spacing: normal;
-    color: black;
-  }
-
-  .heading-3 {
-    font-size: 4.189rem;
-    padding-bottom: 32px;
-    font-weight: bold;
-    font-stretch: normal;
-    font-style: normal;
-    line-height: normal;
-    letter-spacing: normal;
-    color: #000;
-  }
-
-  .heading-4 {
-    font-size: 4.189rem;
-    font-weight: bold;
-    font-stretch: normal;
-    font-style: normal;
-    line-height: normal;
-    letter-spacing: normal;
-  }
-
-  .paragraph {
-    font-size: 2.59rem;
-    padding-bottom: 32px;
-    font-weight: 300;
-    font-stretch: normal;
-    font-style: normal;
-    line-height: normal;
-    letter-spacing: normal;
-  }
-}
-@media only screen and (max-width: 900px) {
-  .heading-2 {
-    font-size: 2.59rem;
-    font-weight: 800;
-    font-stretch: normal;
-    font-style: normal;
-    line-height: 1.03;
-    letter-spacing: normal;
-    color: black;
-  }
-
-  .heading-3 {
-    font-size: 2.59rem;
-    padding-bottom: 32px;
-    font-weight: bold;
-    font-stretch: normal;
-    font-style: normal;
-    line-height: normal;
-    letter-spacing: normal;
-    color: #000;
-  }
-
-  .heading-4 {
-    font-size: 2.59rem;
-    font-weight: bold;
-    font-stretch: normal;
-    font-style: normal;
-    line-height: normal;
-    letter-spacing: normal;
-  }
-
-  .paragraph {
-    font-size: 1.6rem;
-    padding-bottom: 32px;
-    font-weight: 300;
-    font-stretch: normal;
-    font-style: normal;
-    line-height: normal;
-    letter-spacing: normal;
-  }
-
-  .red-box-highlight {
-    background-color: #c81818;
-    width: 90px;
-    height: 90px;
-  }
-}
 .paragraph {
-  font-size: 4.189rem;
-  padding-bottom: 32px;
+  font-size: 1.6rem;
+  padding-bottom: 16px;
   font-weight: 300;
   font-stretch: normal;
   font-style: normal;
   line-height: normal;
   letter-spacing: normal;
 }
-
-.hero__heading {
-  font-size: 6.78rem;
-  font-weight: 800;
-  font-stretch: normal;
-  font-style: normal;
-  line-height: 1.03;
-  letter-spacing: normal;
-  color: #070101;
-}
-@media only screen and (max-width: 900px) {
-  .hero__heading {
-    font-size: 2.59rem;
+@media only screen and (min-width: 900px) {
+  .paragraph {
+    font-size: 4.189rem;
   }
 }
 
 .heading-2 {
-  font-size: 6.78rem;
+  font-size: 4.189rem;
   font-weight: 800;
   font-stretch: normal;
   font-style: normal;
@@ -210,16 +123,25 @@ body {
   letter-spacing: normal;
   color: black;
 }
+@media only screen and (min-width: 900px) {
+  .heading-2 {
+    font-size: 6.78rem;
+  }
+}
 
 .heading-3 {
-  font-size: 4.189rem;
-  padding-bottom: 32px;
+  font-size: 2.59rem;
   font-weight: bold;
   font-stretch: normal;
   font-style: normal;
   line-height: normal;
   letter-spacing: normal;
   color: #000;
+}
+@media only screen and (min-width: 900px) {
+  .heading-3 {
+    font-size: 4.189rem;
+  }
 }
 
 .heading-4 {
@@ -233,14 +155,26 @@ body {
 
 .red-box-highlight {
   background-color: #c81818;
-  width: 180px;
-  height: 180px;
+  width: 10rem;
+  height: 10rem;
+}
+@media screen and (min-width: 900px) {
+  .red-box-highlight {
+    width: 18rem;
+    height: 18rem;
+  }
 }
 
 hr {
   width: 6px;
   background-color: #c91818;
   height: auto;
+  visibility: hidden;
+}
+@media only screen and (min-width: 900px) {
+  hr {
+    visibility: visible;
+  }
 }
 
 .content-wrapper {
@@ -266,94 +200,6 @@ body {
   min-height: 100vh;
 }
 
-@media only screen and (max-width: 1100px) {
-  .heading-2 {
-    font-size: 6.78rem;
-    font-weight: 800;
-    font-stretch: normal;
-    font-style: normal;
-    line-height: 1.03;
-    letter-spacing: normal;
-    color: black;
-  }
-
-  .heading-3 {
-    font-size: 4.189rem;
-    padding-bottom: 32px;
-    font-weight: bold;
-    font-stretch: normal;
-    font-style: normal;
-    line-height: normal;
-    letter-spacing: normal;
-    color: #000;
-  }
-
-  .heading-4 {
-    font-size: 4.189rem;
-    font-weight: bold;
-    font-stretch: normal;
-    font-style: normal;
-    line-height: normal;
-    letter-spacing: normal;
-  }
-
-  .paragraph {
-    font-size: 2.59rem;
-    padding-bottom: 32px;
-    font-weight: 300;
-    font-stretch: normal;
-    font-style: normal;
-    line-height: normal;
-    letter-spacing: normal;
-  }
-}
-@media only screen and (max-width: 900px) {
-  .heading-2 {
-    font-size: 2.59rem;
-    font-weight: 800;
-    font-stretch: normal;
-    font-style: normal;
-    line-height: 1.03;
-    letter-spacing: normal;
-    color: black;
-  }
-
-  .heading-3 {
-    font-size: 2.59rem;
-    padding-bottom: 32px;
-    font-weight: bold;
-    font-stretch: normal;
-    font-style: normal;
-    line-height: normal;
-    letter-spacing: normal;
-    color: #000;
-  }
-
-  .heading-4 {
-    font-size: 2.59rem;
-    font-weight: bold;
-    font-stretch: normal;
-    font-style: normal;
-    line-height: normal;
-    letter-spacing: normal;
-  }
-
-  .paragraph {
-    font-size: 1.6rem;
-    padding-bottom: 32px;
-    font-weight: 300;
-    font-stretch: normal;
-    font-style: normal;
-    line-height: normal;
-    letter-spacing: normal;
-  }
-
-  .red-box-highlight {
-    background-color: #c81818;
-    width: 90px;
-    height: 90px;
-  }
-}
 .header {
   grid-column: 2/3;
   grid-row: 1/2;
@@ -384,6 +230,7 @@ body {
   grid-column: 3/4;
   grid-row: 1/2;
   justify-self: flex-end;
+  visibility: hidden;
   position: relative;
   font-size: 3.2rem;
   font-weight: 300;
@@ -516,32 +363,22 @@ body {
   }
 }
 .paragraph {
-  font-size: 4.189rem;
-  padding-bottom: 32px;
+  font-size: 1.6rem;
+  padding-bottom: 16px;
   font-weight: 300;
   font-stretch: normal;
   font-style: normal;
   line-height: normal;
   letter-spacing: normal;
 }
-
-.hero__heading {
-  font-size: 6.78rem;
-  font-weight: 800;
-  font-stretch: normal;
-  font-style: normal;
-  line-height: 1.03;
-  letter-spacing: normal;
-  color: #070101;
-}
-@media only screen and (max-width: 900px) {
-  .hero__heading {
-    font-size: 2.59rem;
+@media only screen and (min-width: 900px) {
+  .paragraph {
+    font-size: 4.189rem;
   }
 }
 
 .heading-2 {
-  font-size: 6.78rem;
+  font-size: 4.189rem;
   font-weight: 800;
   font-stretch: normal;
   font-style: normal;
@@ -549,16 +386,25 @@ body {
   letter-spacing: normal;
   color: black;
 }
+@media only screen and (min-width: 900px) {
+  .heading-2 {
+    font-size: 6.78rem;
+  }
+}
 
 .heading-3 {
-  font-size: 4.189rem;
-  padding-bottom: 32px;
+  font-size: 2.59rem;
   font-weight: bold;
   font-stretch: normal;
   font-style: normal;
   line-height: normal;
   letter-spacing: normal;
   color: #000;
+}
+@media only screen and (min-width: 900px) {
+  .heading-3 {
+    font-size: 4.189rem;
+  }
 }
 
 .heading-4 {
@@ -572,14 +418,26 @@ body {
 
 .red-box-highlight {
   background-color: #c81818;
-  width: 180px;
-  height: 180px;
+  width: 10rem;
+  height: 10rem;
+}
+@media screen and (min-width: 900px) {
+  .red-box-highlight {
+    width: 18rem;
+    height: 18rem;
+  }
 }
 
 hr {
   width: 6px;
   background-color: #c91818;
   height: auto;
+  visibility: hidden;
+}
+@media only screen and (min-width: 900px) {
+  hr {
+    visibility: visible;
+  }
 }
 
 .content-wrapper {
@@ -605,94 +463,6 @@ body {
   min-height: 100vh;
 }
 
-@media only screen and (max-width: 1100px) {
-  .heading-2 {
-    font-size: 6.78rem;
-    font-weight: 800;
-    font-stretch: normal;
-    font-style: normal;
-    line-height: 1.03;
-    letter-spacing: normal;
-    color: black;
-  }
-
-  .heading-3 {
-    font-size: 4.189rem;
-    padding-bottom: 32px;
-    font-weight: bold;
-    font-stretch: normal;
-    font-style: normal;
-    line-height: normal;
-    letter-spacing: normal;
-    color: #000;
-  }
-
-  .heading-4 {
-    font-size: 4.189rem;
-    font-weight: bold;
-    font-stretch: normal;
-    font-style: normal;
-    line-height: normal;
-    letter-spacing: normal;
-  }
-
-  .paragraph {
-    font-size: 2.59rem;
-    padding-bottom: 32px;
-    font-weight: 300;
-    font-stretch: normal;
-    font-style: normal;
-    line-height: normal;
-    letter-spacing: normal;
-  }
-}
-@media only screen and (max-width: 900px) {
-  .heading-2 {
-    font-size: 2.59rem;
-    font-weight: 800;
-    font-stretch: normal;
-    font-style: normal;
-    line-height: 1.03;
-    letter-spacing: normal;
-    color: black;
-  }
-
-  .heading-3 {
-    font-size: 2.59rem;
-    padding-bottom: 32px;
-    font-weight: bold;
-    font-stretch: normal;
-    font-style: normal;
-    line-height: normal;
-    letter-spacing: normal;
-    color: #000;
-  }
-
-  .heading-4 {
-    font-size: 2.59rem;
-    font-weight: bold;
-    font-stretch: normal;
-    font-style: normal;
-    line-height: normal;
-    letter-spacing: normal;
-  }
-
-  .paragraph {
-    font-size: 1.6rem;
-    padding-bottom: 32px;
-    font-weight: 300;
-    font-stretch: normal;
-    font-style: normal;
-    line-height: normal;
-    letter-spacing: normal;
-  }
-
-  .red-box-highlight {
-    background-color: #c81818;
-    width: 90px;
-    height: 90px;
-  }
-}
 .hero__content {
   display: flex;
   flex-direction: column;
@@ -700,6 +470,7 @@ body {
   align-items: center;
   min-height: 100vh;
   margin: 0 auto;
+  text-align: center;
 }
 @media screen and (min-width: 900px) {
   .hero__content {
@@ -730,8 +501,8 @@ body {
   grid-template-columns: 1fr;
 }
 .hero__circle-main {
-  width: 140px;
-  height: 140px;
+  width: 70px;
+  height: 70px;
   grid-column: 1/2;
   grid-row: 1/2;
   z-index: 20;
@@ -739,8 +510,8 @@ body {
 .hero__red-rectangle {
   grid-column: 1/2;
   grid-row: 1/2;
-  width: 320px;
-  height: 320px;
+  width: 180px;
+  height: 180px;
   background-color: #c81818;
   z-index: 10;
 }
@@ -748,14 +519,14 @@ body {
   position: relative;
   top: 10px;
   right: 10px;
+  width: 180px;
+  height: 180px;
   grid-column: 1/2;
   grid-row: 1/2;
-  width: 320px;
-  height: 320px;
   background-color: black;
 }
 .hero__heading {
-  font-size: 6.78rem;
+  font-size: 4.189rem;
   font-weight: 800;
   font-stretch: normal;
   font-style: normal;
@@ -763,8 +534,13 @@ body {
   letter-spacing: normal;
   color: #070101;
 }
+@media only screen and (min-width: 900px) {
+  .hero__heading {
+    font-size: 6.78rem;
+  }
+}
 .hero__sub-heading {
-  font-size: 2.59rem;
+  font-size: 1.6rem;
   font-weight: 300;
   font-stretch: normal;
   font-style: normal;
@@ -795,49 +571,24 @@ body {
   .hero__content-wrapper {
     grid-template-columns: 1fr;
   }
-  .hero__sub-heading {
-    font-size: 0.987rem;
-  }
-  .hero__red-rectangle {
-    width: 160px;
-    height: 160px;
-  }
-  .hero__black-rectangle {
-    width: 160px;
-    height: 160px;
-  }
-  .hero__circle-main {
-    width: 70px;
-    height: 70px;
-  }
 }
 .paragraph {
-  font-size: 4.189rem;
-  padding-bottom: 32px;
+  font-size: 1.6rem;
+  padding-bottom: 16px;
   font-weight: 300;
   font-stretch: normal;
   font-style: normal;
   line-height: normal;
   letter-spacing: normal;
 }
-
-.hero__heading {
-  font-size: 6.78rem;
-  font-weight: 800;
-  font-stretch: normal;
-  font-style: normal;
-  line-height: 1.03;
-  letter-spacing: normal;
-  color: #070101;
-}
-@media only screen and (max-width: 900px) {
-  .hero__heading {
-    font-size: 2.59rem;
+@media only screen and (min-width: 900px) {
+  .paragraph {
+    font-size: 4.189rem;
   }
 }
 
 .heading-2 {
-  font-size: 6.78rem;
+  font-size: 4.189rem;
   font-weight: 800;
   font-stretch: normal;
   font-style: normal;
@@ -845,16 +596,25 @@ body {
   letter-spacing: normal;
   color: black;
 }
+@media only screen and (min-width: 900px) {
+  .heading-2 {
+    font-size: 6.78rem;
+  }
+}
 
 .heading-3 {
-  font-size: 4.189rem;
-  padding-bottom: 32px;
+  font-size: 2.59rem;
   font-weight: bold;
   font-stretch: normal;
   font-style: normal;
   line-height: normal;
   letter-spacing: normal;
   color: #000;
+}
+@media only screen and (min-width: 900px) {
+  .heading-3 {
+    font-size: 4.189rem;
+  }
 }
 
 .heading-4 {
@@ -868,14 +628,26 @@ body {
 
 .red-box-highlight {
   background-color: #c81818;
-  width: 180px;
-  height: 180px;
+  width: 10rem;
+  height: 10rem;
+}
+@media screen and (min-width: 900px) {
+  .red-box-highlight {
+    width: 18rem;
+    height: 18rem;
+  }
 }
 
 hr {
   width: 6px;
   background-color: #c91818;
   height: auto;
+  visibility: hidden;
+}
+@media only screen and (min-width: 900px) {
+  hr {
+    visibility: visible;
+  }
 }
 
 .content-wrapper {
@@ -901,94 +673,6 @@ body {
   min-height: 100vh;
 }
 
-@media only screen and (max-width: 1100px) {
-  .heading-2 {
-    font-size: 6.78rem;
-    font-weight: 800;
-    font-stretch: normal;
-    font-style: normal;
-    line-height: 1.03;
-    letter-spacing: normal;
-    color: black;
-  }
-
-  .heading-3 {
-    font-size: 4.189rem;
-    padding-bottom: 32px;
-    font-weight: bold;
-    font-stretch: normal;
-    font-style: normal;
-    line-height: normal;
-    letter-spacing: normal;
-    color: #000;
-  }
-
-  .heading-4 {
-    font-size: 4.189rem;
-    font-weight: bold;
-    font-stretch: normal;
-    font-style: normal;
-    line-height: normal;
-    letter-spacing: normal;
-  }
-
-  .paragraph {
-    font-size: 2.59rem;
-    padding-bottom: 32px;
-    font-weight: 300;
-    font-stretch: normal;
-    font-style: normal;
-    line-height: normal;
-    letter-spacing: normal;
-  }
-}
-@media only screen and (max-width: 900px) {
-  .heading-2 {
-    font-size: 2.59rem;
-    font-weight: 800;
-    font-stretch: normal;
-    font-style: normal;
-    line-height: 1.03;
-    letter-spacing: normal;
-    color: black;
-  }
-
-  .heading-3 {
-    font-size: 2.59rem;
-    padding-bottom: 32px;
-    font-weight: bold;
-    font-stretch: normal;
-    font-style: normal;
-    line-height: normal;
-    letter-spacing: normal;
-    color: #000;
-  }
-
-  .heading-4 {
-    font-size: 2.59rem;
-    font-weight: bold;
-    font-stretch: normal;
-    font-style: normal;
-    line-height: normal;
-    letter-spacing: normal;
-  }
-
-  .paragraph {
-    font-size: 1.6rem;
-    padding-bottom: 32px;
-    font-weight: 300;
-    font-stretch: normal;
-    font-style: normal;
-    line-height: normal;
-    letter-spacing: normal;
-  }
-
-  .red-box-highlight {
-    background-color: #c81818;
-    width: 90px;
-    height: 90px;
-  }
-}
 /* main container + header */
 .spacer {
   height: 68px;
@@ -1019,7 +703,7 @@ body {
 }
 .what__red-box-highlight {
   position: relative;
-  left: -25vh;
+  left: -15vh;
   grid-column: 1/3;
   grid-row: 1/2;
 }
@@ -1027,40 +711,48 @@ body {
 .what-section-1 {
   width: 100%;
   position: relative;
+  margin-bottom: 128px;
 }
 .what-section-1__content-wrapper {
-  display: grid;
+  display: block;
   position: relative;
-  clip-path: polygon(80 20 0 100 100 0 20 80);
   margin: 0 auto;
-  grid-template-columns: 7fr 5fr;
-  column-gap: 20px;
-  padding-top: 240px;
-  padding-bottom: 140px;
+  text-align: center;
   max-width: 1440px;
 }
-.what-section-1__computer {
-  width: 100%;
+@media only screen and (min-width: 900px) {
+  .what-section-1__content-wrapper {
+    display: grid;
+    grid-template-columns: 7fr 5fr;
+    column-gap: 20px;
+  }
 }
-.what-section-1__text-wrapper {
-  display: flex;
-  flex-direction: row;
+.what-section-1__computer {
+  max-width: 90%;
+  margin: 0 auto;
 }
 .what-section-1__text-wrapper-sub {
   display: flex;
   flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 .what-section-1::after {
   position: absolute;
   z-index: -10;
-  top: 0;
+  top: 40%;
   left: 0;
   content: "";
   width: 100%;
-  height: 100%;
+  height: 80%;
   background-color: #fff6f6;
   clip-path: polygon(0 0%, 100% 20%, 100% 100%, 0% 80%);
+}
+@media only screen and (min-width: 900px) {
+  .what-section-1::after {
+    clip-path: polygon(0 0%, 100% 20%, 100% 100%, 0% 80%);
+  }
 }
 
 .what-section-2__content-wrapper {
@@ -1076,7 +768,6 @@ body {
 .what-section-2__text-wrapper-sub {
   display: flex;
   flex-direction: column;
-  padding-left: 32px;
 }
 .img-wrapper {
   display: grid;
@@ -1110,57 +801,12 @@ body {
   padding-top: 25%;
   padding-bottom: 10%;
   width: 100%;
-}
-@media only screen and (max-width: 2000px) {
-  .what-section-3 .what-section-3__content-wrapper {
-    padding-top: 20%;
-    padding-bottom: 0;
-  }
-}
-@media only screen and (max-width: 1400px) {
-  .what-section-3 .what-section-3__content-wrapper {
-    padding-top: 20%;
-    padding-bottom: 1%;
-  }
-  .what-section-3 .what-section-3__phone {
-    position: relative;
-    top: -40vw;
-    width: 90%;
-  }
-}
-@media only screen and (max-width: 1240px) {
-  .what-section-3 .what-section-3__content-wrapper {
-    padding-top: 20%;
-    padding-bottom: 8%;
-  }
-}
-@media only screen and (max-width: 1100x) {
-  .what-section-3 .what-section-3__content-wrapper {
-    padding-top: 20%;
-    padding-bottom: 0;
-  }
-}
-@media only screen and (max-width: 930px) {
-  .what-section-3 .what-section-3__content-wrapper {
-    padding-top: 20%;
-    padding-bottom: 7%;
-  }
-}
-@media only screen and (max-width: 800px) {
-  .what-section-3 .what-section-3__content-wrapper {
-    padding-top: 20%;
-    padding-bottom: 12%;
-  }
-  .what-section-3 .what-section-3__phone {
-    position: relative;
-    top: -35vw;
-    width: 90%;
-  }
+  text-align: center;
 }
 .what-section-3__phone {
   position: relative;
-  top: -38vw;
-  width: 90%;
+  left: 4%;
+  margin: 0 auto;
 }
 .what-section-3__text-wrapper {
   display: flex;
@@ -1170,7 +816,6 @@ body {
 .what-section-3__text-wrapper-sub {
   display: flex;
   flex-direction: column;
-  padding-left: 32px;
 }
 
 .what-section-3::after {
@@ -1178,11 +823,11 @@ body {
   content: "";
   position: absolute;
   z-index: -10;
-  top: 0;
+  top: 50%;
   left: 0;
   content: "";
   width: 100%;
-  height: 100%;
+  height: 60%;
   background-color: #fff6f6;
   clip-path: polygon(0 0%, 100% 20%, 100% 100%, 0% 80%);
 }
@@ -1200,8 +845,8 @@ body {
   place-items: center;
 }
 .what-section-4__rectangle {
-  width: 260px;
-  height: 260px;
+  width: 130px;
+  height: 130px;
   grid-column: 1/2;
   grid-row: 1/2;
 }
@@ -1229,6 +874,9 @@ body {
   border-color: gray;
   z-index: 1;
 }
+.what-section-4__circle-main {
+  width: 50%;
+}
 .what-section-4__text-wrapper {
   display: flex;
   flex-direction: row;
@@ -1237,7 +885,6 @@ body {
 .what-section-4__text-wrapper-sub {
   display: flex;
   flex-direction: column;
-  padding-left: 32px;
 }
 
 .what-section-5__content-wrapper {
@@ -1278,32 +925,22 @@ body {
   }
 }
 .paragraph {
-  font-size: 4.189rem;
-  padding-bottom: 32px;
+  font-size: 1.6rem;
+  padding-bottom: 16px;
   font-weight: 300;
   font-stretch: normal;
   font-style: normal;
   line-height: normal;
   letter-spacing: normal;
 }
-
-.hero__heading {
-  font-size: 6.78rem;
-  font-weight: 800;
-  font-stretch: normal;
-  font-style: normal;
-  line-height: 1.03;
-  letter-spacing: normal;
-  color: #070101;
-}
-@media only screen and (max-width: 900px) {
-  .hero__heading {
-    font-size: 2.59rem;
+@media only screen and (min-width: 900px) {
+  .paragraph {
+    font-size: 4.189rem;
   }
 }
 
 .heading-2 {
-  font-size: 6.78rem;
+  font-size: 4.189rem;
   font-weight: 800;
   font-stretch: normal;
   font-style: normal;
@@ -1311,16 +948,25 @@ body {
   letter-spacing: normal;
   color: black;
 }
+@media only screen and (min-width: 900px) {
+  .heading-2 {
+    font-size: 6.78rem;
+  }
+}
 
 .heading-3 {
-  font-size: 4.189rem;
-  padding-bottom: 32px;
+  font-size: 2.59rem;
   font-weight: bold;
   font-stretch: normal;
   font-style: normal;
   line-height: normal;
   letter-spacing: normal;
   color: #000;
+}
+@media only screen and (min-width: 900px) {
+  .heading-3 {
+    font-size: 4.189rem;
+  }
 }
 
 .heading-4 {
@@ -1334,14 +980,26 @@ body {
 
 .red-box-highlight {
   background-color: #c81818;
-  width: 180px;
-  height: 180px;
+  width: 10rem;
+  height: 10rem;
+}
+@media screen and (min-width: 900px) {
+  .red-box-highlight {
+    width: 18rem;
+    height: 18rem;
+  }
 }
 
 hr {
   width: 6px;
   background-color: #c91818;
   height: auto;
+  visibility: hidden;
+}
+@media only screen and (min-width: 900px) {
+  hr {
+    visibility: visible;
+  }
 }
 
 .content-wrapper {
@@ -1367,94 +1025,6 @@ body {
   min-height: 100vh;
 }
 
-@media only screen and (max-width: 1100px) {
-  .heading-2 {
-    font-size: 6.78rem;
-    font-weight: 800;
-    font-stretch: normal;
-    font-style: normal;
-    line-height: 1.03;
-    letter-spacing: normal;
-    color: black;
-  }
-
-  .heading-3 {
-    font-size: 4.189rem;
-    padding-bottom: 32px;
-    font-weight: bold;
-    font-stretch: normal;
-    font-style: normal;
-    line-height: normal;
-    letter-spacing: normal;
-    color: #000;
-  }
-
-  .heading-4 {
-    font-size: 4.189rem;
-    font-weight: bold;
-    font-stretch: normal;
-    font-style: normal;
-    line-height: normal;
-    letter-spacing: normal;
-  }
-
-  .paragraph {
-    font-size: 2.59rem;
-    padding-bottom: 32px;
-    font-weight: 300;
-    font-stretch: normal;
-    font-style: normal;
-    line-height: normal;
-    letter-spacing: normal;
-  }
-}
-@media only screen and (max-width: 900px) {
-  .heading-2 {
-    font-size: 2.59rem;
-    font-weight: 800;
-    font-stretch: normal;
-    font-style: normal;
-    line-height: 1.03;
-    letter-spacing: normal;
-    color: black;
-  }
-
-  .heading-3 {
-    font-size: 2.59rem;
-    padding-bottom: 32px;
-    font-weight: bold;
-    font-stretch: normal;
-    font-style: normal;
-    line-height: normal;
-    letter-spacing: normal;
-    color: #000;
-  }
-
-  .heading-4 {
-    font-size: 2.59rem;
-    font-weight: bold;
-    font-stretch: normal;
-    font-style: normal;
-    line-height: normal;
-    letter-spacing: normal;
-  }
-
-  .paragraph {
-    font-size: 1.6rem;
-    padding-bottom: 32px;
-    font-weight: 300;
-    font-stretch: normal;
-    font-style: normal;
-    line-height: normal;
-    letter-spacing: normal;
-  }
-
-  .red-box-highlight {
-    background-color: #c81818;
-    width: 90px;
-    height: 90px;
-  }
-}
 .how {
   display: grid;
   grid-template-columns: 1fr;
@@ -1478,6 +1048,13 @@ body {
   grid-row: 1/2;
 }
 
+.card-nav-wrapper {
+  display: flex;
+  margin: 0 auto;
+  margin-top: 4rem;
+  gap: 2rem;
+}
+
 .how-section-1 {
   width: 100%;
   display: grid;
@@ -1495,6 +1072,7 @@ body {
   display: flex;
   flex-direction: row;
   width: auto;
+  margin: 0 auto;
 }
 .how-section-1__text-wrapper {
   grid-column: 1/2;
@@ -1539,21 +1117,21 @@ body {
 .card {
   display: grid;
   grid-template-rows: 60px;
-  padding: 24px 32px 16px 32px;
+  padding: 8px 20px 0 20px;
   border-radius: 26px;
   border-radius: 26px;
   box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.5);
   background-color: #fff6f6;
 }
 .card__title-wrapper {
-  max-width: 58ch;
-  margin-bottom: 16px;
+  max-width: 40ch;
 }
 .card__title {
   margin-bottom: 4px;
+  font-size: 2.59rem;
 }
 .card__content-wrapper {
-  max-width: 58ch;
+  max-width: 35ch;
 }
 .card__line {
   width: 100%;
@@ -1569,6 +1147,9 @@ body {
   justify-content: flex-end;
   align-items: center;
 }
+.card__icon {
+  width: 4rem;
+}
 .card__paragraph {
   font-size: 2.59rem;
 }
@@ -1579,60 +1160,48 @@ body {
 .card__card-1 {
   z-index: 4;
 }
+.card__card-1:hover ~ .card {
+  z-index: 4;
+  transform: translate(10px, 10px);
+}
 .card__card-2 {
+  z-index: 3;
+}
+.card__card-2:hover ~ .card {
   z-index: 3;
 }
 .card__card-3 {
   z-index: 2;
+}
+.card__card-3:hover {
+  z-index: 2;
+  transform: translate(10px, 10px);
 }
 .card__card-4 {
   z-index: 1;
 }
 
 .card:not(:first-child) {
-  margin-left: -280px;
+  margin-left: -200px;
 }
 
-@media only screen and (max-width: 1100px) {
-  .card__title-wrapper {
-    max-width: 54ch;
-    margin-bottom: 16px;
-  }
-  .card__content-wrapper {
-    max-width: 54ch;
-  }
-
-  .card:not(:first-child) {
-    margin-left: -280px;
-  }
-}
 .paragraph {
-  font-size: 4.189rem;
-  padding-bottom: 32px;
+  font-size: 1.6rem;
+  padding-bottom: 16px;
   font-weight: 300;
   font-stretch: normal;
   font-style: normal;
   line-height: normal;
   letter-spacing: normal;
 }
-
-.hero__heading {
-  font-size: 6.78rem;
-  font-weight: 800;
-  font-stretch: normal;
-  font-style: normal;
-  line-height: 1.03;
-  letter-spacing: normal;
-  color: #070101;
-}
-@media only screen and (max-width: 900px) {
-  .hero__heading {
-    font-size: 2.59rem;
+@media only screen and (min-width: 900px) {
+  .paragraph {
+    font-size: 4.189rem;
   }
 }
 
 .heading-2 {
-  font-size: 6.78rem;
+  font-size: 4.189rem;
   font-weight: 800;
   font-stretch: normal;
   font-style: normal;
@@ -1640,16 +1209,25 @@ body {
   letter-spacing: normal;
   color: black;
 }
+@media only screen and (min-width: 900px) {
+  .heading-2 {
+    font-size: 6.78rem;
+  }
+}
 
 .heading-3 {
-  font-size: 4.189rem;
-  padding-bottom: 32px;
+  font-size: 2.59rem;
   font-weight: bold;
   font-stretch: normal;
   font-style: normal;
   line-height: normal;
   letter-spacing: normal;
   color: #000;
+}
+@media only screen and (min-width: 900px) {
+  .heading-3 {
+    font-size: 4.189rem;
+  }
 }
 
 .heading-4 {
@@ -1663,14 +1241,26 @@ body {
 
 .red-box-highlight {
   background-color: #c81818;
-  width: 180px;
-  height: 180px;
+  width: 10rem;
+  height: 10rem;
+}
+@media screen and (min-width: 900px) {
+  .red-box-highlight {
+    width: 18rem;
+    height: 18rem;
+  }
 }
 
 hr {
   width: 6px;
   background-color: #c91818;
   height: auto;
+  visibility: hidden;
+}
+@media only screen and (min-width: 900px) {
+  hr {
+    visibility: visible;
+  }
 }
 
 .content-wrapper {
@@ -1696,94 +1286,6 @@ body {
   min-height: 100vh;
 }
 
-@media only screen and (max-width: 1100px) {
-  .heading-2 {
-    font-size: 6.78rem;
-    font-weight: 800;
-    font-stretch: normal;
-    font-style: normal;
-    line-height: 1.03;
-    letter-spacing: normal;
-    color: black;
-  }
-
-  .heading-3 {
-    font-size: 4.189rem;
-    padding-bottom: 32px;
-    font-weight: bold;
-    font-stretch: normal;
-    font-style: normal;
-    line-height: normal;
-    letter-spacing: normal;
-    color: #000;
-  }
-
-  .heading-4 {
-    font-size: 4.189rem;
-    font-weight: bold;
-    font-stretch: normal;
-    font-style: normal;
-    line-height: normal;
-    letter-spacing: normal;
-  }
-
-  .paragraph {
-    font-size: 2.59rem;
-    padding-bottom: 32px;
-    font-weight: 300;
-    font-stretch: normal;
-    font-style: normal;
-    line-height: normal;
-    letter-spacing: normal;
-  }
-}
-@media only screen and (max-width: 900px) {
-  .heading-2 {
-    font-size: 2.59rem;
-    font-weight: 800;
-    font-stretch: normal;
-    font-style: normal;
-    line-height: 1.03;
-    letter-spacing: normal;
-    color: black;
-  }
-
-  .heading-3 {
-    font-size: 2.59rem;
-    padding-bottom: 32px;
-    font-weight: bold;
-    font-stretch: normal;
-    font-style: normal;
-    line-height: normal;
-    letter-spacing: normal;
-    color: #000;
-  }
-
-  .heading-4 {
-    font-size: 2.59rem;
-    font-weight: bold;
-    font-stretch: normal;
-    font-style: normal;
-    line-height: normal;
-    letter-spacing: normal;
-  }
-
-  .paragraph {
-    font-size: 1.6rem;
-    padding-bottom: 32px;
-    font-weight: 300;
-    font-stretch: normal;
-    font-style: normal;
-    line-height: normal;
-    letter-spacing: normal;
-  }
-
-  .red-box-highlight {
-    background-color: #c81818;
-    width: 90px;
-    height: 90px;
-  }
-}
 /* main container + header */
 .spacer {
   height: 68px;
