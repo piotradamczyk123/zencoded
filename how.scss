@@ -166,11 +166,6 @@
     z-index: 4;
   }
 
-  &__card-1:hover ~ .card {
-    z-index: 4;
-    transform: translate(10px, 10px);
-  }
-
   &__card-1:active ~ .card {
     z-index: 4;
     transform: translate(10px, 10px);
