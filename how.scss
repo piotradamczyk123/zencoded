@@ -38,6 +38,7 @@
   width: 100%;
   display: grid;
   place-items: center;
+  margin-bottom: $margin-m;
 
   &__content-wrapper {
     position: relative;
@@ -45,7 +46,6 @@
     display: grid;
     grid-template-columns: 1fr;
     column-gap: 20px;
-    margin-bottom: $margin-m;
   }
 
   &__card-wrapper {

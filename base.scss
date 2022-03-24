@@ -17,17 +17,24 @@ $golden-25: 2.59rem;
 $golden-41: 4.189rem;
 $golden-67: 6.78rem;
 
+//Margins&padding
+
+$margin-xs: 1.6rem;
+$margin-s: 3.2rem;
+$margin-m: 6.4rem;
+$margin-l: 12.8rem;
+
 //TEXT
 
 .paragraph {
   font-size: $golden-16;
-  padding-bottom: 16px;
+
   font-weight: 300;
   font-stretch: normal;
   font-style: normal;
   line-height: normal;
   letter-spacing: normal;
-
+  margin-bottom: 1.6rem;
   @media only screen and (min-width: 900px) {
     font-size: $golden-41;
   }
@@ -56,6 +63,7 @@ $golden-67: 6.78rem;
   line-height: normal;
   letter-spacing: normal;
   color: #000;
+  margin-bottom: $margin-s;
 
   @media only screen and (min-width: 900px) {
     font-size: $golden-41;
@@ -99,10 +107,6 @@ hr {
   max-width: 1440px;
   width: 90%;
 }
-
-//Margins&padding
-
-$margin-m: 12.8rem;
 
 // RESPONSIVE BREAKPOINTS
 

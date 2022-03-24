@@ -50,7 +50,7 @@
 .what-section-1 {
   width: 100%;
   position: relative;
-  margin-bottom: 128px;
+  margin-bottom: $margin-l;
 
   &__heading-3 {
     // padding-bottom: 48px;
@@ -73,6 +73,7 @@
   &__computer {
     max-width: 90%;
     margin: 0 auto;
+    margin-bottom: $margin-s;
   }
 
   &__text-wrapper {
@@ -116,6 +117,7 @@
     width: 90%;
     margin: 0 auto;
     text-align: center;
+    margin-bottom: $margin-m;
   }
 
   &__text-wrapper {
@@ -142,6 +144,7 @@
   width: auto;
   height: auto;
   position: relative;
+  margin-bottom: $margin-s;
   // bottom: 88px;
 
   &__column {
@@ -174,15 +177,16 @@
 
   position: relative;
 
-  margin-top: 40rem;
-  margin-bottom: $margin-m;
+  // margin-top: 40rem;
+  // margin-bottom: $margin-m;
+  margin-bottom: $margin-l;
 
   &__content-wrapper {
     display: grid;
-    grid-template-columns: 7fr 5fr;
+    // grid-template-columns: 7fr 5fr;
     column-gap: 20px;
     margin: 0 auto;
-    padding-top: 25%;
+    // padding-top: 25%;
     padding-bottom: 10%;
     width: 100%;
     text-align: center;
@@ -260,6 +264,7 @@
     // width: 90%;
     left: 4%;
     margin: 0 auto;
+    margin-bottom: $margin-s;
   }
 
   &__text-wrapper {
@@ -303,14 +308,20 @@
     max-width: 1440px;
     margin: 0 auto;
     text-align: center;
+    display: grid;
+    margin-bottom: $margin-m;
   }
 
   &__rectangle-wrapper {
     position: relative;
     display: grid;
+
     grid-template-columns: 1fr;
     place-items: center;
-    // width: 80%;
+    max-width: 100%;
+    place-self: center;
+    width: 80%;
+    margin-bottom: $margin-s;
   }
 
   &__rectangle {
@@ -326,7 +337,7 @@
       display: flex;
       justify-content: center;
       align-items: center;
-
+      justify-self: end;
       background-color: #c91818;
 
       z-index: 10;
@@ -334,6 +345,7 @@
 
     &--black {
       background-color: black;
+      justify-self: center;
       z-index: 5;
     }
 
@@ -341,7 +353,7 @@
       position: absolute;
       bottom: 0;
       left: 0;
-
+      justify-self: start;
       background-color: white;
       border: solid;
       border-width: 2px;
@@ -373,7 +385,7 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     column-gap: 20px;
-
+    margin: 0 auto;
     width: 100%;
   }
 
