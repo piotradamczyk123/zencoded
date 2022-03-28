@@ -12,9 +12,7 @@
   grid-template-columns: 60px 60px;
   justify-content: space-between;
   max-width: 1440px;
-
-  padding-left: 8rem;
-  padding-right: 8rem;
+  width: 90%;
   padding-top: 1.6rem;
   background-color: white;
   z-index: 100;
@@ -30,6 +28,7 @@
     grid-column: 3/4;
     grid-row: 1/2;
     justify-self: flex-end;
+
     visibility: hidden;
     position: relative;
     font-size: 3.2rem;
@@ -41,6 +40,10 @@
     color: #000;
     display: flex;
     z-index: 100;
+
+    @media only screen and (min-width: 900px) {
+      visibility: visible;
+    }
   }
   &__links-list {
     list-style: none;
@@ -134,7 +137,8 @@
 
   &__background {
     height: 2000px;
-    width: 100%;
+    width: 100vw;
+    right: -5vw;
     background-color: #c81818;
     position: absolute;
 

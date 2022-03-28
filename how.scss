@@ -5,12 +5,21 @@
   display: grid;
   grid-template-columns: 1fr;
   place-items: center;
+  margin-bottom: $margin-l;
+
+  @media only screen and (min-width: 900px) {
+    margin-bottom: $margin-xl;
+  }
 
   &__intro {
     display: grid;
     grid-template-columns: 1fr;
     place-items: center;
     margin-bottom: $margin-m;
+
+    @media only screen and (min-width: 900px) {
+      margin-bottom: $margin-l;
+    }
   }
 
   &__heading-2 {
@@ -38,7 +47,6 @@
   width: 100%;
   display: grid;
   place-items: center;
-  margin-bottom: $margin-m;
 
   &__content-wrapper {
     position: relative;
@@ -108,28 +116,55 @@
 
 .card {
   display: grid;
-  grid-template-rows: 60px;
-  padding: 8px 20px 0 20px;
+
+  grid-template-rows: 60px max-content max-content;
+  padding: 1.6rem 1.6rem 1.6rem 1.6rem;
 
   border-radius: 26px;
   border-radius: 26px;
   box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.5);
   background-color: $background-light;
 
+  @media only screen and (min-width: 400px) {
+    padding: 1.6rem 2.4rem 1.6rem 2.4rem;
+  }
+
+  @media only screen and (min-width: 900px) {
+    padding: 2.4rem 3.6rem 2.4rem 3.6rem;
+  }
+
   &__title-wrapper {
-    max-width: 40ch;
-    // max-width: 58ch;
-    // margin-bottom: 16px;
+    // max-width: 40ch;
+
+    max-width: clamp(40ch, 8vw + 1rem, 58ch);
+
+    @media only screen and (min-width: 900px) {
+      max-width: 58ch;
+      margin-bottom: 1.6rem;
+    }
   }
 
   &__title {
-    margin-bottom: 4px;
+    margin-bottom: 1.6rem;
+
     font-size: $golden-25;
+
+    @media only screen and (min-width: 400px) {
+      // font-size: clamp($golden-25, 4vw + 1rem, $golden-41);
+    }
+
+    @media only screen and (min-width: 900px) {
+      font-size: $golden-41;
+      margin-bottom: 8px;
+    }
   }
 
   &__content-wrapper {
-    // max-width: 58ch;
-    max-width: 35ch;
+    // max-width: 35ch;
+    max-width: clamp(35ch, 30vw + 1ch, 58ch);
+    @media only screen and (min-width: 900px) {
+      max-width: 58ch;
+    }
   }
 
   &__line {
@@ -151,10 +186,35 @@
 
   &__icon {
     width: 4rem;
+    position: relative;
+
+    @media only screen and (min-width: 600px) {
+      width: 5rem;
+      // top: -0.8rem;
+      // left: 0.8rem;
+    }
+    @media only screen and (min-width: 900px) {
+      width: 6rem;
+      left: 0;
+    }
   }
 
   &__paragraph {
-    font-size: $golden-25;
+    font-size: $golden-16;
+
+    font-weight: 300;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    margin-bottom: 1.6rem;
+
+    @media only screen and (min-width: 400px) {
+      font-size: clamp($golden-16, 1vw + 1rem, $golden-25);
+    }
+    @media only screen and (min-width: 900px) {
+      font-size: $golden-25;
+    }
   }
 
   &__card-1--active {
@@ -194,6 +254,9 @@
 }
 
 .card:not(:first-child) {
-  // margin-left: -280px;
   margin-left: -200px;
+
+  @media only screen and (min-width: 900px) {
+    margin-left: -280px;
+  }
 }

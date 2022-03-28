@@ -12,10 +12,11 @@
 
     @media screen and (min-width: 900px) {
       display: grid;
-      grid-template-columns: 1fr 1fr;
+      grid-template-columns: 7fr 5fr;
       column-gap: 20px;
       min-height: 100vh;
       margin: 0 auto;
+      text-align: left;
     }
   }
 
@@ -26,6 +27,10 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+
+    @media only screen and (min-width: 900px) {
+      align-items: flex-start;
+    }
   }
 
   &__boxwrapper {
@@ -44,66 +49,100 @@
   &__circle-main {
     width: 70px;
     height: 70px;
-    // width: 140px;
-    // height: 140px;
+
+    width: clamp(7rem, 14.5vw + 1rem, 14rem);
+    height: clamp(7rem, 14.5vw + 1rem, 14rem);
+
     grid-column: 1/2;
     grid-row: 1/2;
     z-index: 20;
+
+    @media screen and (min-width: 900px) {
+      // width: 140px;
+      // height: 140px;
+    }
   }
 
   &__red-rectangle {
     grid-column: 1/2;
     grid-row: 1/2;
-    width: 180px;
-    height: 180px;
-    // width: 320px;
-    // height: 320px;
+
+    width: clamp(18rem, 34vw + 1rem, 32rem);
+    height: clamp(18rem, 34vw + 1rem, 32rem);
+
+    // width: 180px;
+    // height: 180px;
+
     background-color: $red-primary;
     z-index: 10;
+
+    @media screen and (min-width: 900px) {
+      // width: 320px;
+      // height: 320px;
+    }
   }
 
   &__black-rectangle {
     position: relative;
     top: 10px;
     right: 10px;
-    width: 180px;
-    height: 180px;
-    // top: 20px;
-    // right: 20px;
+    width: clamp(18rem, 34vw + 1rem, 32rem);
+    height: clamp(18rem, 34vw + 1rem, 32rem);
+
     grid-column: 1/2;
     grid-row: 1/2;
-    // width: 320px;
-    // height: 320px;
+
     background-color: black;
+    @media screen and (min-width: 900px) {
+      // width: 320px;
+      // height: 320px;
+      top: 20px;
+      right: 20px;
+    }
   }
 
   &__heading {
-    font-size: $golden-41;
+    font-size: clamp($golden-41, 7vw + 1rem, $golden-67);
+    // font-size: $golden-41;
     font-weight: 800;
     font-stretch: normal;
     font-style: normal;
     line-height: 1.03;
     letter-spacing: normal;
     color: #070101;
+    max-width: 70%;
 
     @media only screen and (min-width: 900px) {
-      font-size: $golden-67;
+      // font-size: $golden-67;
+      max-width: 100%;
     }
   }
 
   &__sub-heading {
+    font-size: clamp($golden-16, 0.2vw + 1rem, $golden-25);
     font-size: $golden-16;
     font-weight: 300;
     font-stretch: normal;
     font-style: normal;
     line-height: 1.35;
-
+    max-width: 70%;
     letter-spacing: normal;
     color: #070101;
     width: 85%;
     // margin-top: 32px;
     margin-top: 1em;
     margin-bottom: 4em;
+
+    @media screen and (min-width: 650px) {
+      max-width: 60%;
+    }
+
+    @media screen and (min-width: 900px) {
+      font-size: $golden-25;
+      margin-top: 1em;
+      margin-bottom: 0;
+      max-width: 100%;
+    }
   }
 }
 

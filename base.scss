@@ -23,12 +23,15 @@ $margin-xs: 1.6rem;
 $margin-s: 3.2rem;
 $margin-m: 6.4rem;
 $margin-l: 12.8rem;
+$margin-xl: 19.6rem;
 
 //TEXT
 
 .paragraph {
-  font-size: $golden-16;
-
+  // font-size: $golden-16;
+  font-size: clamp($golden-16, 2vw + 1rem, $golden-41);
+  max-width: 80%;
+  margin-inline: auto;
   font-weight: 300;
   font-stretch: normal;
   font-style: normal;
@@ -36,12 +39,16 @@ $margin-l: 12.8rem;
   letter-spacing: normal;
   margin-bottom: 1.6rem;
   @media only screen and (min-width: 900px) {
-    font-size: $golden-41;
+    font-size: clamp($golden-16, 2.5vw + 1rem, $golden-41);
+    max-width: 100%;
   }
 }
 
 .heading-2 {
-  font-size: $golden-41;
+  position: relative;
+
+  font-size: clamp($golden-41, 6.5vw + 1rem, $golden-67);
+  // font-size: $golden-41;
   font-weight: 800;
   font-stretch: normal;
   font-style: normal;
@@ -50,13 +57,26 @@ $margin-l: 12.8rem;
   color: black;
 
   @media only screen and (min-width: 900px) {
-    font-size: $golden-67;
+    // font-size: $golden-67;
   }
 }
 
-.heading-3 {
-  font-size: $golden-25;
+.heading-2::before {
+  // content: "";
+  // height: 8px;
+  // width: 100%;
 
+  // z-index: -10;
+  // background-color: $red-primary;
+  // position: absolute;
+
+  // bottom: -24px;
+  // left: 0;
+}
+
+.heading-3 {
+  // font-size: $golden-25;
+  font-size: clamp($golden-25, 3.5vw + 1rem, $golden-41);
   font-weight: bold;
   font-stretch: normal;
   font-style: normal;
@@ -64,9 +84,12 @@ $margin-l: 12.8rem;
   letter-spacing: normal;
   color: #000;
   margin-bottom: $margin-s;
+  max-width: 90%;
+  margin-inline: auto;
 
   @media only screen and (min-width: 900px) {
-    font-size: $golden-41;
+    // font-size: $golden-41;
+    max-width: 100%;
   }
 }
 
@@ -81,13 +104,13 @@ $margin-l: 12.8rem;
 }
 
 .red-box-highlight {
-  background-color: #c81818;
-  width: 10rem;
-  height: 10rem;
-  @media screen and (min-width: 900px) {
-    width: 18rem;
-    height: 18rem;
-  }
+  // background-color: #c81818;
+  // width: 10rem;
+  // height: 10rem;
+  // @media screen and (min-width: 900px) {
+  //   width: 18rem;
+  //   height: 18rem;
+  // }
 }
 
 hr {

@@ -33,13 +33,20 @@
   grid-template-columns: 1fr;
   place-items: center;
   text-align: center;
-  margin-bottom: $margin-l;
+  margin-bottom: $margin-xl;
+
+  @media only screen and (min-width: 900px) {
+  }
 
   &__intro {
     display: grid;
     grid-template-columns: 1fr;
     place-items: center;
     margin-bottom: $margin-m;
+
+    @media only screen and (min-width: 900px) {
+      margin-bottom: $margin-l;
+    }
   }
 
   &__red-box-highlight {
@@ -66,16 +73,24 @@
 
   &__content-wrapper {
     position: relative;
-    // display: grid;
-    // grid-template-columns: 1fr 1fr;
+
     margin: 0 auto;
+
+    @media only screen and (min-width: 900px) {
+      display: grid;
+      grid-template-columns: 5fr 7fr;
+    }
   }
 
   &__flex-wrapper-1 {
     display: flex;
     height: 100%;
-    justify-content: center;
-    align-items: center;
+
+    @media only screen and (min-width: 900px) {
+      text-align: left;
+    }
+    // justify-content: center;
+    // align-items: center;
   }
 
   &__flex-wrapper-2 {
@@ -86,10 +101,23 @@
   }
 
   &__phone {
-    width: 82.5%;
-    justify-self: end;
+    max-width: 75%;
+    justify-self: center;
     margin-bottom: $margin-s;
     margin-inline: auto;
+
+    @media only screen and (min-width: 900px) {
+      display: none;
+    }
+  }
+
+  &__phone--outside {
+    display: none;
+    justify-self: end;
+    @media only screen and (min-width: 900px) {
+      display: block;
+      max-width: 75%;
+    }
   }
 
   &__paragraph {
@@ -119,6 +147,11 @@
 
   // clip-path: polygon(0 40%, 100% 0%, 100% 60%, 0% 100%);
   clip-path: polygon(0 20%, 100% 0%, 100% 80%, 0% 100%);
+
+  @media only screen and (min-width: 900px) {
+    height: 40%;
+    top: 72%;
+  }
 }
 
 .button {
@@ -127,10 +160,19 @@
   margin-left: 16px;
   width: 14rem;
   height: 6rem;
-  // width: 270px;
-  // height: 100px;
+
   background-image: linear-gradient(to bottom, #000, #000d30);
   margin: 0 auto;
+
+  @media only screen and (min-width: 600px) {
+    width: 20rem;
+    height: 8rem;
+  }
+
+  @media only screen and (min-width: 900px) {
+    width: 26rem;
+    height: 10rem;
+  }
 
   &__link {
     font-size: $golden-25;
@@ -138,6 +180,10 @@
     color: white;
     text-decoration: none;
     border-bottom: 2px solid white;
+
+    @media only screen and (min-width: 900px) {
+      font-size: $golden-41;
+    }
   }
 }
 
@@ -149,17 +195,24 @@
 
   width: 14rem;
   height: 6rem;
-  top: 8px;
-  right: 8px;
+  top: 1.6rem;
+  right: 1.6rem;
   border: solid 1px #979797;
+
+  @media only screen and (min-width: 600px) {
+    width: 20rem;
+    height: 8rem;
+  }
+
+  @media only screen and (min-width: 900px) {
+    top: 1.6rem;
+    right: 1.6rem;
+    width: 26rem;
+    height: 10rem;
+  }
 }
 
 /* Footer */
-
-.footer {
-  grid-column: 2/3;
-  grid-row: 3/4;
-}
 
 /* CONTACT */
 
@@ -176,6 +229,10 @@
     grid-template-columns: 1fr;
     place-items: center;
     margin-bottom: $margin-m;
+
+    @media only screen and (min-width: 900px) {
+      margin-bottom: $margin-l;
+    }
   }
   &__heading-2 {
     grid-column: 1/3;
@@ -203,35 +260,68 @@
 
   &__content-wrapper {
     display: grid;
-    // grid-template-columns: 5fr 7fr;
+    grid-template-columns: 1fr 1fr;
     margin: 0 auto;
     z-index: 30;
     // margin-bottom: -3rem;
     place-items: center;
+
+    @media only screen and (min-width: 900px) {
+      grid-template-columns: 5fr 7fr;
+    }
   }
   &__img-left {
     max-width: 100%;
 
-    display: none; //hide on mobile
+    // display: none; //hide on mobile
+
+    @media only screen and (min-width: 900px) {
+      display: block;
+    }
   }
   &__img-right {
     max-width: 100%;
     z-index: 20;
+    display: none;
+
+    @media only screen and (min-width: 900px) {
+      display: block;
+    }
+
+    &--mobile {
+      max-width: 69.5%;
+      @media only screen and (min-width: 900px) {
+        display: none;
+      }
+    }
   }
 }
 .contact-section-2 {
   background-color: #c81818;
   width: 100%;
   height: 100%;
-  clip-path: polygon(0 0, 100% 20%, 100% 100%, 0% 100%);
+
+  clip-path: polygon(0 0, 100% 5%, 100% 100%, 0% 100%);
   padding-top: 8rem;
   margin-bottom: -1px; // white line bug fix
+
+  @media only screen and (min-width: 500px) {
+    clip-path: polygon(0 0, 100% 10%, 100% 100%, 0% 100%);
+  }
+
+  @media only screen and (min-width: 900px) {
+    clip-path: polygon(0 0, 100% 20%, 100% 100%, 0% 100%);
+  }
 
   &__contact-svg {
     justify-self: start;
     align-self: center;
-    width: 90%;
+    max-width: 90%;
     display: none; //deleting item on mobile screen
+
+    @media only screen and (min-width: 900px) {
+      display: block;
+    }
   }
 
   &__content-wrapper {
@@ -239,8 +329,14 @@
     display: grid;
     // margin-top: 110px;
     z-index: 10;
-    // grid-template-columns: 1fr 1fr;
+    text-align: center;
+
     margin: 0 auto;
+
+    @media only screen and (min-width: 900px) {
+      grid-template-columns: 1fr 1fr;
+      text-align: left;
+    }
   }
 
   &__heading-2 {
@@ -257,11 +353,16 @@
 .contact-form {
   display: flex;
   flex-direction: column;
-  width: 75%;
+  max-width: 75%;
+
   justify-self: center;
   align-self: center;
   padding-top: 14rem;
   padding-bottom: 14rem;
+
+  @media only screen and (min-width: 600px) {
+    max-width: 60%;
+  }
 
   &__heading {
     margin-bottom: 3.6rem;
@@ -310,7 +411,8 @@
     font-size: $golden-25;
     color: white;
     font-weight: 100;
-    margin: 0 auto;
+    margin-inline: auto;
+    margin-top: 1.6rem;
   }
 
   &__button::after {
@@ -333,7 +435,10 @@
 }
 
 //Footer
-
+.footer {
+  grid-column: 2/3;
+  grid-row: 3/4;
+}
 .footer {
   width: 100vw;
   background-color: $red-primary;
@@ -355,16 +460,32 @@
 
   &__list-wrapper {
     width: 100%;
-    margin-bottom: $margin-s;
+    margin-bottom: $margin-m;
   }
 
   &__list {
     display: flex;
     flex-direction: row;
-
-    font-size: $golden-25;
-    gap: 4.2rem;
+    justify-content: space-around;
+    // font-size: $golden-16;
+    // gap: 4.2rem;
     color: white;
+    font-size: clamp($golden-16, 1.7vw + 1rem, $golden-25);
+
+    @media only screen and (min-width: 900px) {
+      max-width: 70%;
+      margin-inline: auto;
+    }
+
+    @media only screen and (min-width: 900px) {
+      font-size: $golden-25;
+    }
+
+    @media only screen and (min-width: 1100px) {
+      font-size: $golden-25;
+      max-width: 65%;
+      margin-inline: auto;
+    }
   }
   &__list-item {
     list-style: none;
@@ -378,7 +499,7 @@
     flex-direction: row;
     // align-self: center;
     justify-content: center;
-    margin-bottom: $margin-s;
+    margin-bottom: $margin-m;
   }
 
   &__paragraph {
@@ -388,7 +509,12 @@
 
   &__icons-wrapper-sub {
     display: flex;
+    width: 100%;
     flex-direction: row;
+    justify-content: center;
+  }
+  &__icon {
+    width: clamp(4rem, 6vw + 1rem, 6rem);
   }
 
   &__icon:not(:last-child) {
