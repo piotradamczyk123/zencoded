@@ -29,7 +29,7 @@ $margin-xl: 19.6rem;
 
 .paragraph {
   // font-size: $golden-16;
-  font-size: clamp($golden-16, 2vw + 1rem, $golden-41);
+  font-size: clamp($golden-16, 2vw + 1rem, $golden-25);
   max-width: 80%;
   margin-inline: auto;
   font-weight: 300;
@@ -39,7 +39,7 @@ $margin-xl: 19.6rem;
   letter-spacing: normal;
   margin-bottom: 1.6rem;
   @media only screen and (min-width: 900px) {
-    font-size: clamp($golden-16, 2.5vw + 1rem, $golden-41);
+    font-size: $golden-25;
     max-width: 100%;
   }
 }

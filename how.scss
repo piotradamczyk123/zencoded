@@ -117,7 +117,7 @@
 .card {
   display: grid;
 
-  grid-template-rows: 60px max-content max-content;
+  grid-template-rows: 40px max-content max-content;
   padding: 1.6rem 1.6rem 1.6rem 1.6rem;
 
   border-radius: 26px;
@@ -130,7 +130,7 @@
   }
 
   @media only screen and (min-width: 900px) {
-    padding: 2.4rem 3.6rem 2.4rem 3.6rem;
+    padding: 2.4rem 2.4rem 2.4rem 2.4rem;
   }
 
   &__title-wrapper {
@@ -154,7 +154,7 @@
     }
 
     @media only screen and (min-width: 900px) {
-      font-size: $golden-41;
+      // font-size: $golden-41;
       margin-bottom: 8px;
     }
   }
@@ -163,7 +163,7 @@
     // max-width: 35ch;
     max-width: clamp(35ch, 30vw + 1ch, 58ch);
     @media only screen and (min-width: 900px) {
-      max-width: 58ch;
+      max-width: 40ch;
     }
   }
 
@@ -187,15 +187,14 @@
   &__icon {
     width: 4rem;
     position: relative;
+    // left: 1.2rem;
+    // top: rem;
+    // left: 2rem;
 
     @media only screen and (min-width: 600px) {
-      width: 5rem;
-      // top: -0.8rem;
-      // left: 0.8rem;
-    }
-    @media only screen and (min-width: 900px) {
-      width: 6rem;
-      left: 0;
+      width: 4.5rem;
+      // top: -1.6rem;
+      // left: 1.6rem;
     }
   }
 
@@ -209,12 +208,12 @@
     letter-spacing: normal;
     margin-bottom: 1.6rem;
 
-    @media only screen and (min-width: 400px) {
-      font-size: clamp($golden-16, 1vw + 1rem, $golden-25);
-    }
-    @media only screen and (min-width: 900px) {
-      font-size: $golden-25;
-    }
+    // @media only screen and (min-width: 400px) {
+    //   // font-size: clamp($golden-16, 1vw + 1rem, $golden-25);
+    // }
+    // @media only screen and (min-width: 900px) {
+    //   font-size: $golden-25;
+    // }
   }
 
   &__card-1--active {
@@ -257,6 +256,6 @@
   margin-left: -200px;
 
   @media only screen and (min-width: 900px) {
-    margin-left: -280px;
+    margin-left: -220px;
   }
 }
