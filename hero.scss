@@ -6,7 +6,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    min-height: 100vh;
+    min-height: calc(100vh - 52.78px);
     margin: 0 auto;
     text-align: center;
 
@@ -14,7 +14,7 @@
       display: grid;
       grid-template-columns: 7fr 5fr;
       column-gap: 20px;
-      min-height: 100vh;
+      min-height: calc(100vh - 52.78px);
       margin: 0 auto;
       text-align: left;
     }

@@ -24,6 +24,7 @@ $margin-s: 3.2rem;
 $margin-m: 6.4rem;
 $margin-l: 12.8rem;
 $margin-xl: 19.6rem;
+$margin-xxl: 22.6rem;
 
 //TEXT
 
@@ -149,4 +150,8 @@ html {
 body {
   font-family: nunito-sans, sans-serif;
   min-height: 100vh;
+}
+
+.spacer {
+  height: 52.78px;
 }

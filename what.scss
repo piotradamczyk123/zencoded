@@ -30,7 +30,8 @@
     display: grid;
     grid-template-columns: 1fr;
     place-items: center;
-    margin-bottom: $margin-m;
+    margin-bottom: $margin-l;
+    margin-top: $margin-l;
     @media only screen and (min-width: 900px) {
       margin-bottom: $margin-l;
     }
@@ -40,6 +41,16 @@
     grid-column: 1/3;
     grid-row: 1/2;
     z-index: 10;
+  }
+
+  &__heading-2::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -2.4rem;
+    width: 4px;
+    height: 100%;
+    background-color: #c91818;
   }
 
   &__red-box-highlight {
@@ -55,8 +66,9 @@
   position: relative;
   margin-bottom: $margin-l;
 
-  @media only screen and (min-width: 900px) {
+  @media only screen and (min-width: 550px) {
     margin-top: $margin-xl;
+    margin-bottom: $margin-xl;
   }
 
   &__heading-3 {
@@ -135,7 +147,9 @@
     // }
     justify-self: end;
   }
+
   &__text-wrapper-sub {
+    position: relative;
     // display: flex;
     // flex-direction: column;
     // align-items: center;
@@ -147,7 +161,7 @@
 .what-section-1::after {
   position: absolute;
   z-index: -10;
-  top: 30%;
+  top: 35%;
   left: 0;
   content: "";
   width: 100%;
@@ -298,8 +312,11 @@
 
   position: relative;
 
-  // margin-bottom: $margin-m;
-  margin-bottom: $margin-xl;
+  margin-bottom: $margin-l;
+
+  @media only screen and (min-width: 900px) {
+    margin-bottom: $margin-xl;
+  }
 
   &__content-wrapper {
     display: grid;
@@ -363,7 +380,7 @@
   content: "";
   position: absolute;
   z-index: -10;
-  top: 45%;
+  top: 48%;
   left: 0;
   content: "";
   width: 100%;

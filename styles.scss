@@ -8,10 +8,6 @@
 
 /* main container + header */
 
-.spacer {
-  height: 68px;
-}
-
 .container {
   margin: 0 auto;
   overflow-x: hidden;
@@ -33,7 +29,7 @@
   grid-template-columns: 1fr;
   place-items: center;
   text-align: center;
-  margin-bottom: $margin-xl;
+  margin-bottom: $margin-xxl;
 
   @media only screen and (min-width: 900px) {
   }
@@ -63,6 +59,16 @@
     grid-column: 1/3;
     grid-row: 1/2;
     z-index: 10;
+  }
+
+  &__heading-2::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -2.4rem;
+    width: 4px;
+    height: 100%;
+    background-color: #c91818;
   }
 }
 
@@ -102,7 +108,7 @@
 
   &__phone {
     // max-width: 75%;
-    max-width: 50%;
+    max-width: 60%;
     justify-self: center;
     margin-bottom: $margin-s;
     margin-inline: auto;
@@ -144,7 +150,7 @@
 
   height: 75%;
   left: 0;
-  top: 40%;
+  top: 42%;
   width: 100%;
 
   // clip-path: polygon(0 40%, 100% 0%, 100% 60%, 0% 100%);
@@ -249,6 +255,16 @@
     letter-spacing: normal;
     color: black;
     z-index: 10;
+  }
+
+  &__heading-2::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -2.4rem;
+    width: 4px;
+    height: 100%;
+    background-color: #c91818;
   }
 
   &__red-box-highlight {
@@ -464,7 +480,7 @@
 
   &__list-wrapper {
     width: 100%;
-    margin-bottom: $margin-m;
+    margin-bottom: $margin-s;
   }
 
   &__list {
@@ -503,7 +519,7 @@
     flex-direction: row;
     // align-self: center;
     justify-content: center;
-    margin-bottom: $margin-m;
+    margin-bottom: $margin-s;
   }
 
   &__paragraph {
