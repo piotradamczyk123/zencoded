@@ -296,24 +296,22 @@ body {
 .header__checkbox:checked ~ .header__links-wrapper {
   opacity: 1;
 }
-.header__checkbox:checked ~ .header__background {
-  transform: scale(1);
-}
 .header__checkbox:checked ~ .header__links-wrapper .header__links-list .header__link {
   opacity: 1;
   visibility: visible;
 }
 .header__background {
-  height: 2000px;
-  width: 120vw;
-  right: -5vw;
-  top: -5vw;
-  background-color: #c81818;
-  position: absolute;
+  width: 100vw;
+  height: 100vh;
   z-index: 10;
-  transition: transform 0.5s cubic-bezier(0.86, 0, 0.07, 1);
-  transform: scale(0);
-  transform-origin: top right;
+  background-color: red;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: translate(-100vw, -100vw);
+}
+.header__background--visible {
+  transform: translate(0, 0);
 }
 
 @media only screen and (max-width: 900px) {
