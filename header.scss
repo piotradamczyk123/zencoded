@@ -125,9 +125,9 @@
     opacity: 1;
   }
 
-  &__checkbox:checked ~ &__background {
-    transform: scale(1);
-  }
+  // &__checkbox:checked ~ &__background {
+  //   transform: scale(1);
+  // } javascript edit 
 
   &__checkbox:checked ~ &__links-wrapper &__links-list &__link {
     opacity: 1;
@@ -135,17 +135,31 @@
   }
 
   &__background {
-    height: 2000px;
-    width: 120vw;
-    right: -5vw;
-    top: -5vw;
-    background-color: #c81818;
-    position: absolute;
-
+    width: 100vw; 
+    height: 100vh;
     z-index: 10;
-    transition: transform 0.5s cubic-bezier(0.86, 0, 0.07, 1);
-    transform: scale(0);
-    transform-origin: top right;
+    background-color: red;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: translate(-100vw, -100vw);
+    // height: 2000px;
+    // width: 120vw;
+    // right: -5vw;
+    // top: -5vw;
+    // background-color: #c81818;
+    // position: absolute;
+
+    // z-index: 10;
+    // transition: transform 0.5s cubic-bezier(0.86, 0, 0.07, 1);
+    // transform: scale(0);
+    // transform-origin: top right;
+  }
+
+  &__background--visible {
+
+    transform: translate(0, 0);
+    
   }
 }
 
