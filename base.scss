@@ -155,3 +155,30 @@ body {
 .spacer {
   height: 52.78px;
 }
+
+.hidden {
+  display:none; 
+  
+  
+ }
+
+ .visible{
+   display: flex;
+ }
+
+ .noclick{
+   pointer-events: none;
+ }
+
+ .click{
+   pointer-events: all;
+ }
+
+ .opacity{
+   opacity: 1;
+ }
+ .opacity{
+  opacity: 0;
+}
+
+
