@@ -28,15 +28,15 @@
     z-index: 10;
   }
 
-  &__heading-2::after {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: -2.4rem;
-    width: 4px;
-    height: 100%;
-    background-color: #c91818;
-  }
+  // &__heading-2::after {
+  //   content: "";
+  //   position: absolute;
+  //   top: 0;
+  //   left: -2.4rem;
+  //   width: 4px;
+  //   height: 100%;
+  //   background-color: #c91818;
+  // }
 
   &__red-box-highlight {
     position: relative;

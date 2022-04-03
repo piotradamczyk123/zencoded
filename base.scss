@@ -182,3 +182,11 @@ body {
 }
 
 
+.intro-highlight{
+  position: absolute;
+width: 4px;
+background-color: $red-primary;
+height: 100%;
+left: -1.6rem;
+}
+

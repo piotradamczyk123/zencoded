@@ -1,6 +1,8 @@
 @import "base";
 
 .hero {
+
+  
   &__content {
     display: flex;
     flex-direction: column;
@@ -9,6 +11,9 @@
     min-height: calc(100vh - 52.78px);
     margin: 0 auto;
     text-align: center;
+   
+    
+    
 
     @media screen and (min-width: 900px) {
       display: grid;
@@ -22,11 +27,12 @@
 
   &__textwrapper {
     grid-column: 1/2;
-
+    
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    
 
     @media only screen and (min-width: 900px) {
       align-items: flex-start;
@@ -37,6 +43,8 @@
     grid-column: 2/3;
     display: flex;
     justify-content: flex-end;
+   
+    
   }
 
   &__box {
@@ -45,6 +53,7 @@
     display: grid;
     place-items: center;
     grid-template-columns: 1fr;
+    
   }
   &__circle-main {
     width: 70px;
@@ -88,11 +97,14 @@
     right: 10px;
     width: clamp(18rem, 34vw + 1rem, 32rem);
     height: clamp(18rem, 34vw + 1rem, 32rem);
-
+    
     grid-column: 1/2;
     grid-row: 1/2;
 
+       
+    
     background-color: black;
+    // z-index: -100;
     @media screen and (min-width: 900px) {
       // width: 320px;
       // height: 320px;
@@ -109,8 +121,11 @@
     font-style: normal;
     line-height: 1.03;
     letter-spacing: normal;
-    color: #070101;
+    // color: #070101;
+    color: black;
     max-width: 70%;
+    
+    
 
     @media only screen and (min-width: 900px) {
       // font-size: $golden-67;
@@ -148,8 +163,12 @@
 
 @media only screen and (max-width: 900px) {
   .hero {
+
+  
+    
     &__content {
       grid-template-columns: 1fr;
+      mix-blend-mode: difference;
     }
 
     &__textwrapper {
