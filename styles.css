@@ -733,7 +733,7 @@ body {
 @media only screen and (max-width: 900px) {
   .hero__content {
     grid-template-columns: 1fr;
-    mix-blend-mode: difference;
+   
   }
   .hero__textwrapper {
     grid-column: 1/2;
