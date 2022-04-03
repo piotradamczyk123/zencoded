@@ -196,11 +196,11 @@ gsap.to(".projects__intro-highlight", {
     },
   },
 
-  width: "120%",
+  width: "100%",
   height: "150%",
   bottom: "-25%",
   color: "white",
-  left: "-10%",
+
   zIndex: "-10",
 });
 
