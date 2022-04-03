@@ -313,7 +313,6 @@ gsap.from(".img-wrapper__img--col-3", {
     start: "top center",
     end: "bottom 80%",
     scrub: 1,
-    markers: true,
   },
   duration: 5,
 });
@@ -325,7 +324,6 @@ gsap.from(".img-wrapper__img--col-2", {
     start: "top center",
     end: "bottom 80%",
     scrub: 1,
-    markers: true,
   },
   duration: 5,
 });
@@ -337,7 +335,7 @@ gsap.from(".img-wrapper__img--col-1", {
     start: "top center",
     end: "bottom 80%",
     scrub: 1,
-    markers: true,
+
     onLeave: peopleLeave,
     onEnterBack: peopleEnterBack,
   },
