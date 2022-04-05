@@ -241,40 +241,92 @@ gsap.to("#rectangle-2", {
   yoyo: true,
 });
 
-// gsap.to("#rectangle-3", {
-//   rotate: 90,
-//   transformOrigin: "center center",
-//   duration: 0.5,
-//   repeat: -1,
-//   repeatDelay: 3,
-//   yoyo: true,
-// });
+gsap.to("#rectangle-3", {
+  rotate: 90,
+  transformOrigin: "center center",
+  duration: 0.5,
+  repeat: -1,
+  repeatDelay: 3,
+  yoyo: true,
+});
 
 // gsap.to("#indicator", {
 //   rotate: 54,
 //   transformOrigin: "-15% 140%",
 //   x: "21%",
 //   repeat: -1,
-//   duration: 2,
+//   duration: 5,
 // });
 
+//VERSION 2 - almost working
+
 // gsap.fromTo(
-//   "#fill",
+//   "#indicator",
 //   {
-//     scale: 0,
-//     transformOrigin: "left left",
-//     rotate: 90,
-//     duration: 3,
+//     rotate: -78,
+//     transformOrigin: "25% 130%",
+//     x: "-80%",
 //     repeat: -1,
+//     duration: 10,
 //   },
 //   {
-//     scale: 1,
-//     rotate: 90,
-//     transformOrigin: "right top",
-//     duration: 3,
+//     rotate: 49,
+//     transformOrigin: "-15% 130%",
+//     x: "-21%",
 //     repeat: -1,
+//     duration: 10,
 //   }
 // );
+
+//VERSION 3 - close close
+
+// gsap.fromTo(
+//   "#indicator",
+//   {
+//     rotate: -85,
+//     transformOrigin: "25% 130%",
+//     x: "-90%",
+//     repeat: -1,
+//     duration: 10,
+//   },
+//   {
+//     rotate: 52,
+//     transformOrigin: "-15% 130%",
+//     x: "-21%",
+//     repeat: -1,
+//     duration: 10,
+//   }
+// );
+
+gsap.fromTo(
+  "#indicator",
+  {
+    rotate: -80,
+
+    transformOrigin: "25% 130%",
+    x: "-90%",
+    y: "2%",
+
+    scrollTrigger: {
+      trigger: ".what-section-3__phone--outside",
+      start: "top top",
+      scrub: 5,
+    },
+  },
+  {
+    rotate: 52,
+    transformOrigin: "-15% 130%",
+    x: "-21%",
+    y: "-1%",
+    scrollTrigger: {
+      trigger: ".what-section-3__phone--outside",
+      start: "top center",
+      end: "center center",
+      markers: true,
+      scrub: 5,
+    },
+  }
+);
 
 // IMAGES ANIMATIONS
 // gsap.from(
