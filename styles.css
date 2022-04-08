@@ -75,12 +75,12 @@ hr {
 *::after {
   margin: 0;
   padding: 0;
-  box-sizing: inherit;
 }
 
 html {
   box-sizing: border-box;
   font-size: 62.5%;
+  overflow-x: hidden;
 }
 
 body {
@@ -201,12 +201,12 @@ hr {
 *::after {
   margin: 0;
   padding: 0;
-  box-sizing: inherit;
 }
 
 html {
   box-sizing: border-box;
   font-size: 62.5%;
+  overflow-x: hidden;
 }
 
 body {
@@ -562,12 +562,12 @@ hr {
 *::after {
   margin: 0;
   padding: 0;
-  box-sizing: inherit;
 }
 
 html {
   box-sizing: border-box;
   font-size: 62.5%;
+  overflow-x: hidden;
 }
 
 body {
@@ -733,7 +733,6 @@ body {
 @media only screen and (max-width: 900px) {
   .hero__content {
     grid-template-columns: 1fr;
-   
   }
   .hero__textwrapper {
     grid-column: 1/2;
@@ -828,12 +827,12 @@ hr {
 *::after {
   margin: 0;
   padding: 0;
-  box-sizing: inherit;
 }
 
 html {
   box-sizing: border-box;
   font-size: 62.5%;
+  overflow-x: hidden;
 }
 
 body {
@@ -1461,12 +1460,12 @@ hr {
 *::after {
   margin: 0;
   padding: 0;
-  box-sizing: inherit;
 }
 
 html {
   box-sizing: border-box;
   font-size: 62.5%;
+  overflow-x: hidden;
 }
 
 body {
@@ -1800,12 +1799,12 @@ hr {
 *::after {
   margin: 0;
   padding: 0;
-  box-sizing: inherit;
 }
 
 html {
   box-sizing: border-box;
   font-size: 62.5%;
+  overflow-x: hidden;
 }
 
 body {
