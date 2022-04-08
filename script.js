@@ -322,7 +322,7 @@ gsap.fromTo(
       trigger: ".what-section-3__phone--outside",
       start: "top center",
       end: "center center",
-      markers: true,
+
       scrub: 5,
     },
   }
