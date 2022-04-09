@@ -1,13 +1,21 @@
 gsap.registerPlugin(ScrollTrigger);
 
-let vw = Math.max(
-  document.documentElement.clientWidth || 0,
-  window.innerWidth || 0
-);
-const vh = Math.max(
-  document.documentElement.clientHeight || 0,
-  window.innerHeight || 0
-);
+// let vw = Math.max(
+//   document.documentElement.clientWidth || 0,
+//   window.innerWidth || 0
+// );
+// const vh = Math.max(
+//   document.documentElement.clientHeight || 0,
+//   window.innerHeight || 0
+// );
+
+function checkVW() {
+  let vw = Math.max(
+    document.documentElement.clientWidth || 0,
+    window.innerWidth || 0
+  );
+  return vw;
+}
 
 let hamburger = document.getElementsByClassName("header__checkbox-label")[0];
 
@@ -16,7 +24,6 @@ let links = document.getElementsByClassName("header__link");
 let linksWrapper = document.getElementsByClassName("header__links-wrapper")[0];
 let redBox = document.getElementsByClassName("hero__red-rectangle")[0];
 let blackBox = document.getElementsByClassName("hero__black-rectangle")[0];
-let circle = document.getElementsByClassName("hero__circle-main")[0];
 
 let toggle = 0;
 
@@ -429,3 +436,114 @@ function peopleEnterBack() {
   gsap.to(".img-wrapper__img-8", { x: 0, duration: peopleDuration });
   gsap.to(".img-wrapper__img-9", { x: 0, y: 0, duration: peopleDuration });
 }
+
+var redRectangle = document.querySelector(".hero__red-rectangle");
+var blackRectangle = document.querySelector(".hero__black-rectangle");
+var text = document.querySelector(".hero__textwrapper");
+var circle = document.querySelector(".hero__circle-main");
+var header = document.querySelector(".header");
+
+gsap.to(redRectangle, {
+  scrollTrigger: {
+    trigger: header,
+    start: "top top",
+    end: "1000 top",
+    scrub: 1,
+    markers: true,
+  },
+  x: checkVW(),
+  rotation: 90,
+});
+
+gsap.to(blackRectangle, {
+  scrollTrigger: {
+    trigger: header,
+    start: "top top",
+    end: "1000 top",
+    scrub: 2,
+    markers: true,
+  },
+  x: checkVW(),
+  rotation: 90,
+});
+
+gsap.to(circle, {
+  scrollTrigger: {
+    trigger: header,
+    start: "top top",
+    end: "1000 top",
+    scrub: 1,
+    markers: true,
+  },
+  x: checkVW(),
+  rotation: 90,
+});
+
+gsap.to(text, {
+  scrollTrigger: {
+    trigger: header,
+    start: "top top",
+    end: "1000 top",
+    scrub: 1,
+  },
+  x: -checkVW(),
+  rotation: -90,
+});
+
+//WHAT 4
+var redRectangleSmall = document.querySelector(
+  ".what-section-4__rectangle--red"
+);
+gsap.from(".what-section-4__rectangle--red", {
+  scrollTrigger: {
+    trigger: ".what-section-4__content-wrapper",
+    start: "top center",
+    end: "bottom center",
+    scrub: 1,
+  },
+
+  right: 0,
+});
+
+gsap.to(".what-section-4__rectangle--red", {
+  scrollTrigger: {
+    trigger: ".what-section-4__content-wrapper",
+    start: "top center",
+    end: "bottom center",
+    scrub: 1,
+  },
+
+  top: 0,
+});
+
+gsap.from(".what-section-4__rectangle--white", {
+  scrollTrigger: {
+    trigger: ".what-section-4__content-wrapper",
+    start: "top center",
+    end: "bottom center",
+    scrub: 1,
+  },
+
+  left: 0,
+});
+
+gsap.to(".what-section-4__rectangle--white", {
+  scrollTrigger: {
+    trigger: ".what-section-4__content-wrapper",
+    start: "top center",
+    end: "bottom center",
+    scrub: 1,
+  },
+
+  top: -2,
+});
+
+//Contanct Section
+
+// gsap.to("#object-4", {
+//   x: "-200%",
+//   rotation: 90,
+//   transformOrigin: "bottom center",
+//   repeat: Infinity,
+//   yoyo: true,
+// });

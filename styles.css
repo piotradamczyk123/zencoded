@@ -1299,30 +1299,24 @@ body {
 .what-section-4__rectangle--red {
   position: absolute;
   top: -20%;
-  right: 0;
   display: flex;
   justify-content: center;
   align-items: center;
-  justify-self: end;
   background-color: #c91818;
   z-index: 10;
 }
 @media only screen and (min-width: 900px) {
   .what-section-4__rectangle--red {
     top: -40%;
-    right: 0;
   }
 }
 .what-section-4__rectangle--black {
   background-color: black;
-  justify-self: center;
   z-index: 5;
 }
 .what-section-4__rectangle--white {
   position: absolute;
   top: 20%;
-  left: 0;
-  justify-self: start;
   background-color: white;
   border: solid;
   border-width: 2px;
@@ -1692,10 +1686,6 @@ body {
 .card__card-1 {
   z-index: 4;
 }
-.card__card-1:active ~ .card {
-  z-index: 4;
-  transform: translate(10px, 10px);
-}
 .card__card-2 {
   z-index: 3;
 }
@@ -1704,10 +1694,6 @@ body {
 }
 .card__card-3 {
   z-index: 2;
-}
-.card__card-3:focus {
-  z-index: 2;
-  transform: translate(10px, 10px);
 }
 .card__card-4 {
   z-index: 1;
