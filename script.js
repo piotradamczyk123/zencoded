@@ -547,3 +547,10 @@ gsap.to(".what-section-4__rectangle--white", {
 //   repeat: Infinity,
 //   yoyo: true,
 // });
+
+//Cards
+
+var card1 = document.querySelector(".card__card-1");
+var card2 = document.querySelector(".card__card-2");
+var card3 = document.querySelector(".card__card-3");
+var card4 = document.querySelector(".card__card-4");
