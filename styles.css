@@ -1551,6 +1551,7 @@ body {
 }
 .how-section-1__content-wrapper {
   position: relative;
+  margin-inline: auto;
   display: grid;
   grid-template-columns: 1fr;
   column-gap: 20px;
@@ -1561,6 +1562,7 @@ body {
   flex-direction: row;
   width: auto;
   margin: 0 auto;
+  gap: 2.4rem;
 }
 .how-section-1__text-wrapper {
   grid-column: 1/2;
@@ -1678,10 +1680,6 @@ body {
   line-height: normal;
   letter-spacing: normal;
   margin-bottom: 1.6rem;
-}
-.card__card-1--active {
-  background-color: #c81818;
-  color: white;
 }
 .card__card-1 {
   z-index: 4;

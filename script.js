@@ -554,3 +554,164 @@ var card1 = document.querySelector(".card__card-1");
 var card2 = document.querySelector(".card__card-2");
 var card3 = document.querySelector(".card__card-3");
 var card4 = document.querySelector(".card__card-4");
+
+cardTl1 = gsap.timeline();
+cardTl2 = gsap.timeline();
+cardTl3 = gsap.timeline();
+var cardSwitch = 0;
+
+//state color function
+
+function changeColorIn(cardNumber) {
+  if (cardNumber != 4) {
+    gsap.to(".card__card-" + cardNumber, {
+      backgroundColor: "#c81818",
+      color: "#ffffff",
+    });
+    gsap.to("#card-" + cardNumber + "__icon-svg", {
+      attr: { fill: "#ffffff" },
+    });
+    gsap.to(".card__line-" + cardNumber, { borderTopColor: "#ffffff" });
+  } else {
+    {
+      gsap.to(".card__card-" + cardNumber, {
+        backgroundColor: "#c81818",
+        color: "#ffffff",
+      });
+      gsap.to("#card-" + cardNumber + "__icon-svg", {
+        attr: { stroke: "#ffffff" },
+      });
+      gsap.to("#card-" + cardNumber + "__icon-svg-o", {
+        attr: { fill: "#ffffff" },
+      });
+      gsap.to(".card__line-" + cardNumber, { borderTopColor: "#ffffff" });
+    }
+  }
+}
+
+function changeColorOut(cardNumber) {
+  if (cardNumber != 4) {
+    gsap.to(".card__card-" + cardNumber, {
+      backgroundColor: "#fff6f6",
+      color: "#000000",
+    });
+    gsap.to("#card-" + cardNumber + "__icon-svg", {
+      attr: { fill: "#726E6E" },
+    });
+    gsap.to(".card__line-" + cardNumber, { borderTopColor: "#726e6e" });
+  } else {
+    gsap.to(".card__card-" + cardNumber, {
+      backgroundColor: "#fff6f6",
+      color: "#000000",
+    });
+
+    gsap.to("#card-" + cardNumber + "__icon-svg", {
+      attr: { stroke: "#726E6E" },
+    });
+    gsap.to("#card-" + cardNumber + "__icon-svg-o", {
+      attr: { fill: "#726E6E" },
+    });
+    gsap.to(".card__line-" + cardNumber, { borderTopColor: "#726e6e" });
+  }
+}
+
+//card1
+changeColorIn(1);
+
+//card2
+
+card2.addEventListener("click", () => {
+  if (cardSwitch == 0) {
+    cardSwitch = 1;
+    changeColorOut(1);
+    changeColorIn(2);
+    cardTl1.to(card1, {
+      x: -275,
+      rotate: -25,
+    });
+    gsap.to(card3, { x: 100, rotate: 15 });
+    gsap.to(card4, { x: 100, rotate: 15 });
+    cardTl1.to(card1, { x: -100, rotate: -15, zIndex: -5 });
+    card1.classList.add("noclick");
+    card3.classList.add("noclick");
+    card4.classList.add("noclick");
+  } else {
+    cardSwitch = 0;
+    changeColorIn(1);
+    changeColorOut(2);
+    cardTl1.to(card1, { x: -275, rotate: 0, zIndex: 5 });
+    gsap.to(card3, { x: 0, rotate: 0 });
+    gsap.to(card4, { x: 0, rotate: 0 });
+    cardTl1.to(card1, { x: 0, rotate: 0 });
+    card1.classList.remove("noclick");
+    card3.classList.remove("noclick");
+    card4.classList.remove("noclick");
+  }
+});
+
+//card3
+
+card3.addEventListener("click", () => {
+  if (cardSwitch == 0) {
+    cardSwitch = 1;
+    changeColorOut(1);
+    changeColorIn(3);
+    cardTl1.to(card1, { x: -250, rotate: -15 });
+    cardTl2.to(card2, { x: -250, rotate: -15 });
+    cardTl1.to(card1, { x: -100, rotate: -15, zIndex: -4 });
+    cardTl2.to(card2, { x: -100, rotate: -15, zIndex: -5 });
+    gsap.to(card4, { x: 100, rotate: 15 });
+    card1.classList.add("noclick");
+    card2.classList.add("noclick");
+    card4.classList.add("noclick");
+  } else {
+    cardSwitch = 0;
+    changeColorIn(1);
+    changeColorOut(3);
+    cardTl1.to(card1, { x: -250, rotate: 0, zIndex: 4 });
+    cardTl2.to(card2, { x: -250, rotate: 0, zIndex: 3 });
+    cardTl1.to(card1, { x: 0, rotate: 0 });
+    cardTl2.to(card2, { x: 0, rotate: 0 });
+    gsap.to(card4, { x: 0, rotate: 0 });
+    card1.classList.remove("noclick");
+    card2.classList.remove("noclick");
+    card4.classList.remove("noclick");
+  }
+});
+
+//card4
+
+card4.addEventListener("click", () => {
+  if (cardSwitch == 0) {
+    cardSwitch = 1;
+    changeColorOut(1);
+    changeColorIn(4);
+    cardTl1.to(card1, { x: -250, rotate: -15 });
+    cardTl2.to(card2, { x: -250, rotate: -15 });
+    cardTl3.to(card3, { x: -250, rotate: -15 });
+
+    cardTl1.to(card1, { x: 0, rotate: -15 });
+    cardTl2.to(card2, { x: 0, rotate: -15 });
+    cardTl3.to(card3, { x: 0, rotate: -15 });
+    gsap.to(card4, { zIndex: 10, delay: 0.5 });
+
+    card1.classList.add("noclick");
+    card2.classList.add("noclick");
+    card3.classList.add("noclick");
+  } else {
+    cardSwitch = 0;
+    changeColorIn(1);
+    changeColorOut(4);
+    gsap.to(card4, { zIndex: 1 });
+    cardTl1.to(card1, { x: -250, rotate: -15 });
+    cardTl2.to(card2, { x: -250, rotate: -15 });
+    cardTl3.to(card3, { x: -250, rotate: -15 });
+    cardTl1.to(card1, { x: 0, rotate: 0 });
+    cardTl2.to(card2, { x: 0, rotate: 0 });
+    cardTl3.to(card3, { x: 0, rotate: 0 });
+
+    card1.classList.remove("noclick");
+    card2.classList.remove("noclick");
+    card3.classList.remove("noclick");
+  }
+});
