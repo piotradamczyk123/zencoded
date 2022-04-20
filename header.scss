@@ -109,6 +109,8 @@
     z-index: 1110;
     opacity: 0;
     position: relative;
+    // display: inline-block;
+    
    
     
     
@@ -121,14 +123,17 @@
    
   }
 
+  
+
   &__link:hover{
     @media only screen and (min-width: 900px){
       color: white;
+      
     }
   }
 
   &__link:hover::after{
-
+    
     @media only screen and (min-width: 900px) {
       content: "";
       position: absolute;
@@ -144,14 +149,7 @@
     
   }
 
-  @keyframes lol {
-    0% {
-      transform: translate(100, -100);
-    }
-    100% {
-      transform: translate(0, 200);
-    }
-  }
+ 
 
 
   

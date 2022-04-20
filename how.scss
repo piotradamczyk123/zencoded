@@ -5,17 +5,19 @@
   display: grid;
   grid-template-columns: 1fr;
   place-items: center;
+ 
   margin-bottom: $margin-l;
 
   @media only screen and (min-width: 900px) {
-    margin-bottom: $margin-l;
+    
+    margin-bottom: $margin-xxxl;
   }
 
   &__intro {
     display: grid;
     grid-template-columns: 1fr;
     place-items: center;
-    margin-bottom: $margin-m;
+    margin-bottom: $margin-xl;
 
     @media only screen and (min-width: 900px) {
       margin-bottom: $margin-l;

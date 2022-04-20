@@ -422,7 +422,7 @@
 .what-section-4 {
   width: 100%;
 
-  margin-bottom: $margin-m;
+  margin-bottom: $margin-l;
   &__content-wrapper {
     width: 90%;
     max-width: 1440px;
@@ -432,7 +432,7 @@
 
     @media only screen and (min-width: 900px) {
       position: relative;
-      margin-bottom: $margin-l;
+      margin-bottom: $margin-xl;
       display: grid;
       grid-template-columns: 7fr 5fr;
       column-gap: 20px;
@@ -552,7 +552,7 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     column-gap: 20px;
-    margin: 0 auto;
+    margin-inline: auto;
     width: 100%;
   }
 
