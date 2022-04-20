@@ -257,80 +257,102 @@ gsap.to("#rectangle-3", {
   yoyo: true,
 });
 
-// gsap.to("#indicator", {
-//   rotate: 54,
-//   transformOrigin: "-15% 140%",
-//   x: "21%",
-//   repeat: -1,
-//   duration: 5,
-// });
+//Section 3 animation
 
-//VERSION 2 - almost working
-
-// gsap.fromTo(
-//   "#indicator",
-//   {
-//     rotate: -78,
-//     transformOrigin: "25% 130%",
-//     x: "-80%",
-//     repeat: -1,
-//     duration: 10,
-//   },
-//   {
-//     rotate: 49,
-//     transformOrigin: "-15% 130%",
-//     x: "-21%",
-//     repeat: -1,
-//     duration: 10,
-//   }
-// );
-
-//VERSION 3 - close close
-
-// gsap.fromTo(
-//   "#indicator",
-//   {
-//     rotate: -85,
-//     transformOrigin: "25% 130%",
-//     x: "-90%",
-//     repeat: -1,
-//     duration: 10,
-//   },
-//   {
-//     rotate: 52,
-//     transformOrigin: "-15% 130%",
-//     x: "-21%",
-//     repeat: -1,
-//     duration: 10,
-//   }
-// );
+const section3TL = gsap.timeline();
 
 gsap.fromTo(
   "#indicator",
   {
-    rotate: -80,
-
-    transformOrigin: "25% 130%",
-    x: "-90%",
-    y: "2%",
+    rotate: -65,
+    x: "-100%",
+    y: "5%",
+    transformOrigin: "10% 145%",
 
     scrollTrigger: {
       trigger: ".what-section-3__phone--outside",
       start: "top top",
+
       scrub: 5,
     },
   },
   {
-    rotate: 52,
-    transformOrigin: "-15% 130%",
-    x: "-21%",
-    y: "-1%",
+    x: "80%",
+    y: "-3%",
+
+    rotate: 65,
+    transformOrigin: "4% 147%",
+
     scrollTrigger: {
       trigger: ".what-section-3__phone--outside",
       start: "top center",
       end: "center center",
 
       scrub: 5,
+    },
+  }
+);
+
+gsap.fromTo(
+  "#check-1",
+  {
+    opacity: 0,
+    duration: 1,
+    scrollTrigger: {
+      trigger: ".what-section-3__phone--outside",
+      start: "center 70%",
+    },
+  },
+  {
+    opacity: 1,
+    duration: 1,
+    scrollTrigger: {
+      trigger: ".what-section-3__phone--outside",
+      start: "center 70%",
+    },
+  }
+);
+
+gsap.fromTo(
+  "#check-2",
+  {
+    opacity: 0,
+    duration: 1,
+
+    scrollTrigger: {
+      trigger: ".what-section-3__phone--outside",
+      start: "center 60%",
+    },
+  },
+  {
+    opacity: 1,
+    duration: 1,
+
+    scrollTrigger: {
+      trigger: ".what-section-3__phone--outside",
+      start: "center 60%",
+    },
+  }
+);
+
+gsap.fromTo(
+  "#check-3",
+  {
+    opacity: 0,
+    duration: 1,
+
+    scrollTrigger: {
+      trigger: ".what-section-3__phone--outside",
+      start: "center 50%",
+    },
+  },
+  {
+    opacity: 1,
+    duration: 1,
+
+    scrollTrigger: {
+      trigger: ".what-section-3__phone--outside",
+      start: "center 50%",
     },
   }
 );
@@ -369,36 +391,44 @@ gsap.from(".img-wrapper__img--col-3", {
   y: "-100%",
   scrollTrigger: {
     trigger: ".what-section-2",
-    start: "top center",
-    end: "bottom 80%",
+    start: "top 60%",
+    end: "bottom 95%",
     scrub: 1,
   },
-  duration: 5,
 });
+
+// gsap.from(".img-wrapper__img--col-3", {
+//   y: "-100%",
+//   scrollTrigger: {
+//     trigger: ".what-section-2",
+//     start: "top center",
+//     end: "bottom 70%",
+//     scrub: 1,
+//   },
+//   duration: 5,
+// });
 
 gsap.from(".img-wrapper__img--col-2", {
   y: "-50%",
   scrollTrigger: {
     trigger: ".what-section-2",
-    start: "top center",
-    end: "bottom 80%",
+    start: "top 60%",
+    end: "bottom 95%",
     scrub: 1,
   },
-  duration: 5,
 });
 
 gsap.from(".img-wrapper__img--col-1", {
   y: "0",
   scrollTrigger: {
     trigger: ".what-section-2",
-    start: "top center",
-    end: "bottom 80%",
+    start: "top 60%",
+    end: "bottom 95%",
     scrub: 1,
 
     onLeave: peopleLeave,
     onEnterBack: peopleEnterBack,
   },
-  duration: 5,
 });
 
 var peopleDuration = 1.5;
@@ -493,7 +523,7 @@ var redRectangleSmall = document.querySelector(
 );
 gsap.from(".what-section-4__rectangle--red", {
   scrollTrigger: {
-    trigger: ".what-section-4__content-wrapper",
+    trigger: ".what-section-4",
     start: "top center",
     end: "bottom center",
     scrub: 1,
@@ -504,7 +534,7 @@ gsap.from(".what-section-4__rectangle--red", {
 
 gsap.to(".what-section-4__rectangle--red", {
   scrollTrigger: {
-    trigger: ".what-section-4__content-wrapper",
+    trigger: ".what-section-4",
     start: "top center",
     end: "bottom center",
     scrub: 1,
@@ -515,7 +545,7 @@ gsap.to(".what-section-4__rectangle--red", {
 
 gsap.from(".what-section-4__rectangle--white", {
   scrollTrigger: {
-    trigger: ".what-section-4__content-wrapper",
+    trigger: ".what-section-4",
     start: "top center",
     end: "bottom center",
     scrub: 1,
@@ -526,7 +556,7 @@ gsap.from(".what-section-4__rectangle--white", {
 
 gsap.to(".what-section-4__rectangle--white", {
   scrollTrigger: {
-    trigger: ".what-section-4__content-wrapper",
+    trigger: ".what-section-4",
     start: "top center",
     end: "bottom center",
     scrub: 1,
