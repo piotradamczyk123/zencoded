@@ -518,12 +518,13 @@ gsap.to(text, {
 });
 
 //WHAT 4
-var redRectangleSmall = document.querySelector(
-  ".what-section-4__rectangle--red"
-);
+// var redRectangleSmall = document.querySelector(
+//   ".what-section-4__rectangle--red"
+// );
+
 gsap.from(".what-section-4__rectangle--red", {
   scrollTrigger: {
-    trigger: ".what-section-4",
+    trigger: ".what-section-4__text-wrapper",
     start: "top center",
     end: "bottom center",
     scrub: 1,
@@ -534,7 +535,7 @@ gsap.from(".what-section-4__rectangle--red", {
 
 gsap.to(".what-section-4__rectangle--red", {
   scrollTrigger: {
-    trigger: ".what-section-4",
+    trigger: ".what-section-4__text-wrapper",
     start: "top center",
     end: "bottom center",
     scrub: 1,
@@ -545,7 +546,7 @@ gsap.to(".what-section-4__rectangle--red", {
 
 gsap.from(".what-section-4__rectangle--white", {
   scrollTrigger: {
-    trigger: ".what-section-4",
+    trigger: ".what-section-4__text-wrapper",
     start: "top center",
     end: "bottom center",
     scrub: 1,
@@ -556,7 +557,7 @@ gsap.from(".what-section-4__rectangle--white", {
 
 gsap.to(".what-section-4__rectangle--white", {
   scrollTrigger: {
-    trigger: ".what-section-4",
+    trigger: ".what-section-4__text-wrapper",
     start: "top center",
     end: "bottom center",
     scrub: 1,
