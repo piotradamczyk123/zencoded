@@ -1088,12 +1088,11 @@ body {
   margin-inline: auto;
   grid: 2/3;
   grid-template-columns: 1fr 1fr 1fr;
-  gap: 20px;
+  gap: 10px;
   width: auto;
   height: auto;
   position: relative;
   margin-bottom: 3.2rem;
-  margin-top: 30%;
 }
 @media only screen and (min-width: 900px) {
   .img-wrapper {
@@ -1101,12 +1100,18 @@ body {
     grid-column: 2/3;
     align-self: start;
     display: none;
+    gap: 20;
   }
 }
 .img-wrapper__column {
   display: flex;
   flex-direction: column;
-  gap: 20px;
+  gap: 10px;
+}
+@media only screen and (min-wdith: 900px) {
+  .img-wrapper__column {
+    gap: 20px;
+  }
 }
 .img-wrapper__img {
   max-width: 100%;
@@ -1897,7 +1902,7 @@ body {
   justify-content: space-between;
 }
 .projects-section-1__phone {
-  max-width: 50%;
+  max-width: 60%;
   justify-self: center;
   margin-bottom: 3.2rem;
   margin-inline: auto;
@@ -1949,8 +1954,8 @@ body {
   font-weight: 100;
   border-style: none;
   margin-left: 16px;
-  width: 14rem;
-  height: 6rem;
+  width: 12rem;
+  height: 4rem;
   background-image: linear-gradient(to bottom, #000, #000d30);
   margin: 0 auto;
 }
@@ -1961,7 +1966,7 @@ body {
   }
 }
 .button__link {
-  font-size: 2.59rem;
+  font-size: 1.6rem;
   font-weight: 100;
   color: white;
   text-decoration: none;
@@ -1972,10 +1977,10 @@ body {
   position: absolute;
   background-color: transparent;
   z-index: -1;
-  width: 14rem;
-  height: 6rem;
-  top: 0.8rem;
-  right: 0.8rem;
+  width: 12rem;
+  height: 4rem;
+  top: 0.4rem;
+  right: 0.4rem;
   border: solid 1px #979797;
 }
 @media only screen and (min-width: 1300px) {
@@ -2049,7 +2054,7 @@ body {
 }
 .contact-section-1__img-right {
   max-width: 100%;
-  z-index: 20;
+  z-index: 10;
   display: none;
 }
 @media only screen and (min-width: 900px) {
@@ -2059,6 +2064,7 @@ body {
 }
 .contact-section-1__img-right--mobile {
   max-width: 69.5%;
+  z-index: 100;
 }
 @media only screen and (min-width: 900px) {
   .contact-section-1__img-right--mobile {
@@ -2125,7 +2131,7 @@ body {
   justify-self: center;
   align-self: center;
   padding-top: 14rem;
-  padding-bottom: 14rem;
+  padding-bottom: 3.2rem;
 }
 @media only screen and (min-width: 600px) {
   .contact-form {
@@ -2133,7 +2139,7 @@ body {
   }
 }
 .contact-form__heading {
-  margin-bottom: 3.6rem;
+  margin-bottom: 6.4rem;
 }
 .contact-form__label {
   visibility: hidden;
@@ -2141,7 +2147,7 @@ body {
 }
 .contact-form__input::placeholder {
   color: white;
-  font-size: 2.59rem;
+  font-size: 1.6rem;
   font-weight: 100;
   font-family: nunito-sans, sans-serif;
 }
@@ -2153,7 +2159,7 @@ body {
   background-color: #c81818;
   margin-bottom: 3.6rem;
   color: white;
-  font-size: 2.59rem;
+  font-size: 1.6rem;
   font-weight: 100;
   font-family: nunito-sans, sans-serif;
 }
@@ -2164,14 +2170,14 @@ body {
   font-weight: 100;
   border-style: none;
   margin-top: 42px;
-  width: 20rem;
-  height: 6rem;
+  width: 12rem;
+  height: 4rem;
   background-color: #c81818;
   position: relative;
   border: solid 2px #000;
   background-color: #c81818;
   font-size: nunito-sans, sans-serif;
-  font-size: 2.59rem;
+  font-size: 1.6rem;
   color: white;
   font-weight: 100;
   margin-inline: auto;
@@ -2182,8 +2188,8 @@ body {
   position: absolute;
   background-color: #0f161a;
   z-index: -1;
-  width: 20rem;
-  height: 6rem;
+  width: 12rem;
+  height: 4rem;
   top: 2px;
   right: 2px;
   border: none;

@@ -203,7 +203,7 @@ gsap.to(".projects__intro-highlight", {
     },
   },
 
-  width: "105%",
+  width: "107%",
   height: "150%",
   bottom: "-25%",
   color: "white",
