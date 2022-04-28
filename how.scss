@@ -17,7 +17,7 @@
     display: grid;
     grid-template-columns: 1fr;
     place-items: center;
-    margin-bottom: $margin-xl;
+    margin-bottom: $margin-l;
 
     @media only screen and (min-width: 900px) {
       margin-bottom: $margin-l;
@@ -214,6 +214,14 @@
     }
   }
 
+  &__paragraph-3{
+    display: none;
+
+    @media only screen and (min-width: 600px){
+      display: inline-block;
+    }
+  }
+
   &__paragraph {
     font-size: $golden-16;
 
@@ -223,6 +231,8 @@
     line-height: normal;
     letter-spacing: normal;
     margin-bottom: 1.6rem;
+
+    
 
     // @media only screen and (min-width: 400px) {
     //   // font-size: clamp($golden-16, 1vw + 1rem, $golden-25);

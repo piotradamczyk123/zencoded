@@ -34,7 +34,7 @@
   line-height: normal;
   letter-spacing: normal;
   color: #000;
-  margin-bottom: 3.2rem;
+  margin-bottom: 6.4rem;
   max-width: 90%;
   margin-inline: auto;
 }
@@ -160,7 +160,7 @@ body {
   line-height: normal;
   letter-spacing: normal;
   color: #000;
-  margin-bottom: 3.2rem;
+  margin-bottom: 6.4rem;
   max-width: 90%;
   margin-inline: auto;
 }
@@ -513,7 +513,7 @@ body {
   line-height: normal;
   letter-spacing: normal;
   color: #000;
-  margin-bottom: 3.2rem;
+  margin-bottom: 6.4rem;
   max-width: 90%;
   margin-inline: auto;
 }
@@ -778,7 +778,7 @@ body {
   line-height: normal;
   letter-spacing: normal;
   color: #000;
-  margin-bottom: 3.2rem;
+  margin-bottom: 6.4rem;
   max-width: 90%;
   margin-inline: auto;
 }
@@ -1410,7 +1410,7 @@ body {
   line-height: normal;
   letter-spacing: normal;
   color: #000;
-  margin-bottom: 3.2rem;
+  margin-bottom: 6.4rem;
   max-width: 90%;
   margin-inline: auto;
 }
@@ -1515,7 +1515,7 @@ body {
   display: grid;
   grid-template-columns: 1fr;
   place-items: center;
-  margin-bottom: 19.6rem;
+  margin-bottom: 12.8rem;
 }
 @media only screen and (min-width: 900px) {
   .how__intro {
@@ -1669,6 +1669,14 @@ body {
     width: 4.5rem;
   }
 }
+.card__paragraph-3 {
+  display: none;
+}
+@media only screen and (min-width: 600px) {
+  .card__paragraph-3 {
+    display: inline-block;
+  }
+}
 .card__paragraph {
   font-size: 1.6rem;
   font-weight: 300;
@@ -1739,7 +1747,7 @@ body {
   line-height: normal;
   letter-spacing: normal;
   color: #000;
-  margin-bottom: 3.2rem;
+  margin-bottom: 6.4rem;
   max-width: 90%;
   margin-inline: auto;
 }
@@ -1930,6 +1938,7 @@ body {
 }
 .projects-section-1__button {
   position: relative;
+  align-self: center;
 }
 
 .projects-section-1::after {
@@ -1957,21 +1966,26 @@ body {
   width: 12rem;
   height: 4rem;
   background-image: linear-gradient(to bottom, #000, #000d30);
-  margin: 0 auto;
 }
-@media only screen and (min-width: 1300px) {
+@media only screen and (min-width: 500px) {
   .button {
-    width: 20rem;
-    height: 8rem;
+    width: 15rem;
+    height: 6rem;
   }
 }
 .button__link {
   font-size: 1.6rem;
-  font-weight: 100;
+  font-weight: 500;
   color: white;
   text-decoration: none;
   border-bottom: 2px solid white;
 }
+@media only screen and (min-width: 500px) {
+  .button__link {
+    font-size: 2.59rem;
+  }
+}
+
 .button::after {
   content: "";
   position: absolute;
@@ -1983,12 +1997,12 @@ body {
   right: 0.4rem;
   border: solid 1px #979797;
 }
-@media only screen and (min-width: 1300px) {
+@media only screen and (min-width: 500px) {
   .button::after {
-    width: 20rem;
-    height: 8rem;
-    top: 1.6rem;
-    right: 1.6rem;
+    width: 15rem;
+    height: 6rem;
+    top: 0.8rem;
+    right: 0.8rem;
   }
 }
 
@@ -2130,7 +2144,7 @@ body {
   max-width: 75%;
   justify-self: center;
   align-self: center;
-  padding-top: 14rem;
+  padding-top: 6.4rem;
   padding-bottom: 3.2rem;
 }
 @media only screen and (min-width: 600px) {
@@ -2151,6 +2165,11 @@ body {
   font-weight: 100;
   font-family: nunito-sans, sans-serif;
 }
+@media only screen and (min-width: 500px) {
+  .contact-form__input::placeholder {
+    font-size: 2.59rem;
+  }
+}
 .contact-form__input {
   border-top: none;
   border-left: none;
@@ -2163,13 +2182,17 @@ body {
   font-weight: 100;
   font-family: nunito-sans, sans-serif;
 }
+@media only screen and (min-width: 500px) {
+  .contact-form__input {
+    font-size: 2.59rem;
+  }
+}
 .contact-form__input:focus {
   outline: none;
 }
 .contact-form__button {
-  font-weight: 100;
   border-style: none;
-  margin-top: 42px;
+  margin-top: 4.2rem;
   width: 12rem;
   height: 4rem;
   background-color: #c81818;
@@ -2179,9 +2202,16 @@ body {
   font-size: nunito-sans, sans-serif;
   font-size: 1.6rem;
   color: white;
-  font-weight: 100;
+  font-weight: 500;
   margin-inline: auto;
   margin-top: 1.6rem;
+}
+@media only screen and (min-width: 500px) {
+  .contact-form__button {
+    width: 20rem;
+    height: 6rem;
+    font-size: 2.59rem;
+  }
 }
 .contact-form__button::after {
   content: "";
@@ -2193,6 +2223,13 @@ body {
   top: 2px;
   right: 2px;
   border: none;
+}
+@media only screen and (min-width: 500px) {
+  .contact-form__button::after {
+    width: 20rem;
+    height: 6rem;
+    font-size: 2.59rem;
+  }
 }
 .contact-form__heading {
   color: white;

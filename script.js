@@ -211,6 +211,31 @@ gsap.to(".projects__intro-highlight", {
   zIndex: "-10",
 });
 
+//Contact
+
+gsap.to(".contact__intro-highlight", {
+  scrollTrigger: {
+    trigger: ".contact__heading-2",
+    start: "top 90%",
+    end: "top 60%",
+
+    scrub: 3,
+    onLeave: () => {
+      gsap.to(".contact__heading-2", {
+        color: "white",
+        duration: 1.5,
+      });
+    },
+  },
+
+  width: "120%",
+  height: "150%",
+  bottom: "-25%",
+  color: "white",
+  left: "-10%",
+  zIndex: "-10",
+});
+
 //COMPUTER ANIMATION
 
 gsap.to("#oval-1", {
@@ -218,6 +243,12 @@ gsap.to("#oval-1", {
   rotation: -360,
   duration: 7,
   transformOrigin: "right 75%",
+  scrollTrigger: {
+    trigger: ".what-section-1",
+    start: "top bottom",
+
+    toggleActions: "play pause resume pause",
+  },
 });
 
 gsap.to("#oval-2", {
@@ -225,6 +256,12 @@ gsap.to("#oval-2", {
   rotation: -360,
   duration: 7,
   transformOrigin: "right 75%",
+  scrollTrigger: {
+    trigger: ".what-section-1",
+    start: "top bottom",
+
+    toggleActions: "play pause resume pause",
+  },
 });
 
 gsap.to("#oval-3", {
@@ -232,6 +269,12 @@ gsap.to("#oval-3", {
   rotation: 360,
   duration: 20,
   transformOrigin: "right 5%",
+  scrollTrigger: {
+    trigger: ".what-section-1",
+    start: "top bottom",
+
+    toggleActions: "play pause resume pause",
+  },
 });
 
 gsap.to("#rectangle-1", {
@@ -239,6 +282,12 @@ gsap.to("#rectangle-1", {
   duration: 5,
   repeat: -1,
   yoyo: true,
+  scrollTrigger: {
+    trigger: ".what-section-1",
+    start: "top bottom",
+
+    toggleActions: "play pause resume pause",
+  },
 });
 
 gsap.to("#rectangle-2", {
@@ -246,6 +295,12 @@ gsap.to("#rectangle-2", {
   duration: 5,
   repeat: -1,
   yoyo: true,
+  scrollTrigger: {
+    trigger: ".what-section-1",
+    start: "top bottom",
+
+    toggleActions: "play pause resume pause",
+  },
 });
 
 gsap.to("#rectangle-3", {
@@ -255,6 +310,12 @@ gsap.to("#rectangle-3", {
   repeat: -1,
   repeatDelay: 3,
   yoyo: true,
+  scrollTrigger: {
+    trigger: ".what-section-1",
+    start: "top bottom",
+
+    toggleActions: "play pause resume pause",
+  },
 });
 
 //Section 3 animation
@@ -522,49 +583,49 @@ gsap.to(text, {
 //   ".what-section-4__rectangle--red"
 // );
 
-gsap.from(".what-section-4__rectangle--red", {
-  scrollTrigger: {
-    trigger: ".what-section-4__text-wrapper",
-    start: "top center",
-    end: "bottom center",
-    scrub: 1,
-  },
+// gsap.from(".what-section-4__rectangle--red", {
+//   scrollTrigger: {
+//     trigger: ".what-section-4__text-wrapper",
+//     start: "top center",
+//     end: "bottom center",
+//     scrub: 1,
+//   },
 
-  right: 0,
-});
+//   right: 0,
+// });
 
-gsap.to(".what-section-4__rectangle--red", {
-  scrollTrigger: {
-    trigger: ".what-section-4__text-wrapper",
-    start: "top center",
-    end: "bottom center",
-    scrub: 1,
-  },
+// gsap.to(".what-section-4__rectangle--red", {
+//   scrollTrigger: {
+//     trigger: ".what-section-4__text-wrapper",
+//     start: "top center",
+//     end: "bottom center",
+//     scrub: 1,
+//   },
 
-  top: 0,
-});
+//   top: 0,
+// });
 
-gsap.from(".what-section-4__rectangle--white", {
-  scrollTrigger: {
-    trigger: ".what-section-4__text-wrapper",
-    start: "top center",
-    end: "bottom center",
-    scrub: 1,
-  },
+// gsap.from(".what-section-4__rectangle--white", {
+//   scrollTrigger: {
+//     trigger: ".what-section-4__text-wrapper",
+//     start: "top center",
+//     end: "bottom center",
+//     scrub: 1,
+//   },
 
-  left: 0,
-});
+//   left: 0,
+// });
 
-gsap.to(".what-section-4__rectangle--white", {
-  scrollTrigger: {
-    trigger: ".what-section-4__text-wrapper",
-    start: "top center",
-    end: "bottom center",
-    scrub: 1,
-  },
+// gsap.to(".what-section-4__rectangle--white", {
+//   scrollTrigger: {
+//     trigger: ".what-section-4__text-wrapper",
+//     start: "top center",
+//     end: "bottom center",
+//     scrub: 1,
+//   },
 
-  top: -2,
-});
+//   top: -2,
+// });
 
 //Contanct Section
 
