@@ -583,11 +583,30 @@
     justify-content: center;
   }
   &__icon {
-    width: clamp(4rem, 6vw + 1rem, 6rem);
+    // width: clamp(4rem, 6vw + 1rem, 6rem);
+    width: 2.4rem;
+    @media screen and (min-width: 500px){
+     width: 3.6rem; 
+    }
+
+
+    @media screen and (min-width: 500px){
+      width: 4.2rem; 
+     }
   }
 
   &__icon:not(:last-child) {
     margin-right: 3.2rem;
+
+    @media screen and (min-width: 500px){
+      margin-right: 4.2rem; 
+     }
+
+     @media screen and (min-width: 500px){
+      margin-right: 6.4rem; 
+     }
+
+   
   }
 }
 
