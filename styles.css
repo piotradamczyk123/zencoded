@@ -2130,7 +2130,7 @@ body {
 .contact-section-2__contact-svg {
   justify-self: start;
   align-self: center;
-  max-width: 90%;
+  max-width: 75%;
   display: none;
 }
 @media only screen and (min-width: 900px) {
@@ -2278,7 +2278,12 @@ body {
 }
 .footer__list-wrapper {
   width: 100%;
-  margin-bottom: 3.2rem;
+  margin-bottom: 1.6rem;
+}
+@media only screen and (min-width: 500px) {
+  .footer__list-wrapper {
+    margin-bottom: 3.2rem;
+  }
 }
 .footer__list {
   display: flex;

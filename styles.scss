@@ -365,7 +365,7 @@
   &__contact-svg {
     justify-self: start;
     align-self: center;
-    max-width: 90%;
+    max-width: 75%;
     display: none; //deleting item on mobile screen
 
     @media only screen and (min-width: 900px) {
@@ -529,7 +529,11 @@
 
   &__list-wrapper {
     width: 100%;
-    margin-bottom: $margin-s;
+    margin-bottom: $margin-xs;
+
+    @media only screen and (min-width: 500px) {
+      margin-bottom: $margin-s;
+    }
   }
 
   &__list {
