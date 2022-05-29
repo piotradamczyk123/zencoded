@@ -1,14 +1,5 @@
 gsap.registerPlugin(ScrollTrigger);
 
-// let vw = Math.max(
-//   document.documentElement.clientWidth || 0,
-//   window.innerWidth || 0
-// );
-// const vh = Math.max(
-//   document.documentElement.clientHeight || 0,
-//   window.innerHeight || 0
-// );
-
 function checkVW() {
   let vw = Math.max(
     document.documentElement.clientWidth || 0,
@@ -419,34 +410,6 @@ gsap.fromTo(
 );
 
 // IMAGES ANIMATIONS
-// gsap.from(
-//   ".img-wrapper__img--col-3",
-//   { y: "-100%" },
-//   {
-//     scrollTrigger: {
-//       trigger: ".what-section-2",
-//       start: "top 60%",
-//       end: "bottom 90%",
-//       markers: true,
-//       scrub: 3,
-//     },
-//   }
-// );
-
-// gsap.from(
-//   ".img-wrapper__img--col-2",
-//   { y: "-50%" },
-//   {
-//     scrollTrigger: {
-//       trigger: ".what-section-2",
-//       start: "top 60%",
-//       end: "bottom 90%",
-//       markers: true,
-//       scrub: 3,
-//       // onLeave: peopleEnd,
-//     },
-//   }
-// );
 
 gsap.from(".img-wrapper__img--col-3", {
   y: "-100%",
@@ -457,17 +420,6 @@ gsap.from(".img-wrapper__img--col-3", {
     scrub: 1,
   },
 });
-
-// gsap.from(".img-wrapper__img--col-3", {
-//   y: "-100%",
-//   scrollTrigger: {
-//     trigger: ".what-section-2",
-//     start: "top center",
-//     end: "bottom 70%",
-//     scrub: 1,
-//   },
-//   duration: 5,
-// });
 
 gsap.from(".img-wrapper__img--col-2", {
   y: "-50%",
@@ -508,7 +460,11 @@ function peopleLeave() {
   gsap.to(".img-wrapper__img-6", { y: -10, duration: peopleDuration });
   gsap.to(".img-wrapper__img-7", { x: -10, y: 10, duration: peopleDuration });
   gsap.to(".img-wrapper__img-8", { x: -10, duration: peopleDuration });
-  gsap.to(".img-wrapper__img-9", { x: -10, y: -10, duration: peopleDuration });
+  gsap.to(".img-wrapper__img-9", {
+    x: -10,
+    y: -10,
+    duration: peopleDuration,
+  });
 }
 
 function peopleEnterBack() {
