@@ -500,6 +500,22 @@
     color: white;
     font-weight: 200;
   }
+
+
+  &__checkbox-label{
+    color: white;
+    font-size: $golden-16;
+    margin-left: 0.4rem;
+  }
+
+  &__checkbox-link{
+    color: white;
+    font-size: $golden-16;
+    margin-left: 0.4rem;
+    text-decoration: underline;
+    cursor: pointer;
+    
+  }
 }
 
 //Footer
@@ -653,6 +669,7 @@
   display: flex;
   align-items: flex-start;
   justify-items: flex-start;
+
   background-color: #fefefe;
   margin: 15% auto; /* 15% from the top and centered */
   padding: 20px;
@@ -664,7 +681,7 @@
 .close {
  
   margin-left: 3.2rem;
-  
+  order: 1;
   color: #aaa;
   float: right;
   font-size: 28px;

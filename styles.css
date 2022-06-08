@@ -2258,6 +2258,18 @@ body {
   color: white;
   font-weight: 200;
 }
+.contact-form__checkbox-label {
+  color: white;
+  font-size: 1.6rem;
+  margin-left: 0.4rem;
+}
+.contact-form__checkbox-link {
+  color: white;
+  font-size: 1.6rem;
+  margin-left: 0.4rem;
+  text-decoration: underline;
+  cursor: pointer;
+}
 
 .footer {
   grid-column: 2/3;
@@ -2398,6 +2410,7 @@ body {
 /* The Close Button */
 .close {
   margin-left: 3.2rem;
+  order: 1;
   color: #aaa;
   float: right;
   font-size: 28px;
