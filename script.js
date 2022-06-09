@@ -1,5 +1,7 @@
 gsap.registerPlugin(ScrollTrigger);
 
+//Checking screen width
+
 function checkVW() {
   let vw = Math.max(
     document.documentElement.clientWidth || 0,
@@ -22,6 +24,8 @@ var tl = gsap.timeline();
 var heroTL = gsap.timeline();
 var computerTl = gsap.timeline();
 var peopleTl = gsap.timeline();
+
+//Hamburger animation
 
 hamburger.addEventListener("click", () => {
   if (toggle == 0) {
@@ -81,53 +85,7 @@ hamburger.addEventListener("click", () => {
   }
 });
 
-//RECTANGLE ANIMATIONS
-// heroTL.to(redBox, {
-//   scrollTrigger: {
-//     trigger: redBox,
-//     // toggleActions: "start none none none",
-//     start: "top",
-//     end: vh / 2,
-//     pin: ".hero",
-//     scrub: 2,
-//     markers: true,
-//   },
-
-//   x: vw,
-//   rotate: 45,
-// });
-
-// heroTL.to(circle, {
-//   scrollTrigger: {
-//     trigger: redBox,
-//     // toggleActions: "start none none none",
-//     start: "top",
-//     end: vh / 2,
-//     pin: ".hero",
-//     scrub: 2,
-//     markers: true,
-//   },
-
-//   x: vw,
-//   rotate: 45,
-// });
-
-// heroTL.to(blackBox, {
-//   scrollTrigger: {
-//     trigger: redBox,
-//     // toggleActions: "start none none none",
-//     start: "top",
-//     end: vh / 2,
-//     pin: ".hero",
-//     scrub: 2,
-//     markers: true,
-//   },
-//   x: -vh,
-// });
-
-// INTRO ANIMATIONS
-
-// WHAT INTRO
+//INTRO Animation
 
 gsap.to(".what__intro-highlight", {
   scrollTrigger: {
@@ -534,65 +492,6 @@ gsap.to(text, {
   rotation: -90,
 });
 
-//WHAT 4
-// var redRectangleSmall = document.querySelector(
-//   ".what-section-4__rectangle--red"
-// );
-
-// gsap.from(".what-section-4__rectangle--red", {
-//   scrollTrigger: {
-//     trigger: ".what-section-4__text-wrapper",
-//     start: "top center",
-//     end: "bottom center",
-//     scrub: 1,
-//   },
-
-//   right: 0,
-// });
-
-// gsap.to(".what-section-4__rectangle--red", {
-//   scrollTrigger: {
-//     trigger: ".what-section-4__text-wrapper",
-//     start: "top center",
-//     end: "bottom center",
-//     scrub: 1,
-//   },
-
-//   top: 0,
-// });
-
-// gsap.from(".what-section-4__rectangle--white", {
-//   scrollTrigger: {
-//     trigger: ".what-section-4__text-wrapper",
-//     start: "top center",
-//     end: "bottom center",
-//     scrub: 1,
-//   },
-
-//   left: 0,
-// });
-
-// gsap.to(".what-section-4__rectangle--white", {
-//   scrollTrigger: {
-//     trigger: ".what-section-4__text-wrapper",
-//     start: "top center",
-//     end: "bottom center",
-//     scrub: 1,
-//   },
-
-//   top: -2,
-// });
-
-//Contanct Section
-
-// gsap.to("#object-4", {
-//   x: "-200%",
-//   rotation: 90,
-//   transformOrigin: "bottom center",
-//   repeat: Infinity,
-//   yoyo: true,
-// });
-
 //Cards
 
 var card1 = document.querySelector(".card__card-1");
@@ -770,7 +669,7 @@ var modal = document.getElementById("myModal");
 var btn = document.getElementById("modal");
 
 // Get the <span> element that closes the modal
-var span = document.getElementsByClassName("close")[0];
+var span = document.getElementsByClassName("modal__close")[0];
 
 // When the user clicks on the button, open the modal
 btn.onclick = function () {
@@ -796,7 +695,7 @@ var modal = document.getElementById("myModal");
 var btn = document.getElementById("modal2");
 
 // Get the <span> element that closes the modal
-var span = document.getElementsByClassName("close")[0];
+var span = document.getElementsByClassName("modal__close")[0];
 
 // When the user clicks on the button, open the modal
 btn.onclick = function () {

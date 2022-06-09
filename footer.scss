@@ -1,0 +1,130 @@
+
+@import "base";
+
+//Footer
+.footer {
+    grid-column: 2/3;
+    grid-row: 3/4;
+  }
+  .footer {
+    width: 100vw;
+    background-color: $red-primary;
+    overflow-x: hidden;
+    padding-top: 6.4rem;
+    &__content-wrapper {
+      // display: grid;
+      // grid-template-columns: 1fr 1fr;
+      // padding: 6rem 8rem;
+      // background-color: $red-primary;
+      // justify-items: center;
+      // align-items: center;
+      // margin: 0 auto;
+      width: 90%;
+      margin: 0 auto;
+      max-width: 1440px;
+      text-align: center;
+      
+    }
+  
+    &__list-wrapper {
+      width: 100%;
+      margin-bottom: $margin-xs;
+  
+      @media only screen and (min-width: 500px) {
+        margin-bottom: $margin-s;
+      }
+    }
+  
+    &__list {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+      // font-size: $golden-16;
+      // gap: 4.2rem;
+      color: white;
+      font-size: clamp($golden-16, 1.7vw + 1rem, $golden-25);
+  
+      @media only screen and (min-width: 900px) {
+        max-width: 70%;
+        margin-inline: auto;
+      }
+  
+      @media only screen and (min-width: 900px) {
+        font-size: $golden-25;
+      }
+  
+      @media only screen and (min-width: 1100px) {
+        font-size: $golden-25;
+        max-width: 65%;
+        margin-inline: auto;
+      }
+    }
+    &__list-item {
+      list-style: none;
+      width: max-content;
+    }
+    &__list-item:not(:last-child) {
+    }
+  
+    &__list-link{
+      cursor: pointer;
+    }
+  
+    &__icons-wrapper {
+      display: flex;
+      flex-direction: row;
+      // align-self: center;
+      justify-content: center;
+      margin-bottom: $margin-s;
+    }
+  
+    &__paragraph {
+      font-size: $golden-25;
+      color: white;
+    }
+  
+    &__icons-wrapper-sub {
+      display: flex;
+      width: 100%;
+      flex-direction: row;
+      justify-content: center;
+    }
+    &__icon {
+      // width: clamp(4rem, 6vw + 1rem, 6rem);
+      width: 2.4rem;
+      @media screen and (min-width: 500px){
+       width: 3.6rem; 
+      }
+  
+  
+      @media screen and (min-width: 500px){
+        width: 4.2rem; 
+       }
+    }
+  
+    &__icon:not(:last-child) {
+      margin-right: 3.2rem;
+  
+      @media screen and (min-width: 500px){
+        margin-right: 4.2rem; 
+       }
+  
+       @media screen and (min-width: 500px){
+        margin-right: 6.4rem; 
+       }
+  
+     
+    }
+  }
+  
+  .footer::after {
+    // position: absolute;
+  
+    // content: "";
+  
+    // background-color: #c81818;
+  
+    // z-index: -20;
+  
+    // width: 100%;
+  }
