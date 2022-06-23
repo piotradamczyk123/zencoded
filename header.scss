@@ -89,30 +89,32 @@
   }
 
   &__list-item::after {
-    content: "";
-    position: absolute;
-    background-color: white;
-    width: 100%;
-    height: 2px;
-    bottom: 0;
-    left: 0;
-    transform: scaleX(0);
-    transition: transform 0.5s ease-in-out;
-    transform-origin: left;
+    // content: "";
+    // position: absolute;
+    // background-color: white;
+    // width: 100%;
+    // height: 2px;
+    // bottom: 0;
+    // left: 0;
+    // transform: scaleX(0);
+    // transition: transform 0.5s ease-in-out;
+    // transform-origin: left;
+    
    
  
      
    }
 
   &__list-item:hover::after {
-   content: "";
-   position: absolute;
-   background-color: white;
-   width: 100%;
-   height: 2px;
-   bottom: 0;
-   left: 0;
-   transform: scaleX(1);
+  //  content: "";
+  //  position: absolute;
+  //  background-color: white;
+  //  width: 100%;
+  //  height: 2px;
+  //  bottom: 0;
+  //  left: 0;
+  //  transform: scaleX(1);
+   
   
 
     
@@ -128,7 +130,7 @@
     position: relative;
     // display: inline-block;
     transition: color 0.5s ease-in-out;
-
+    cursor: pointer;
   
    
     
@@ -223,49 +225,84 @@
     margin-top: auto;
     height: 100%;
     display: flex;
+    flex-direction: column;
+    gap: 0.6rem;
     align-items: center;
     z-index: 500;
   }
 
+  &__hamburger-wrapper{
+    
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 0.6rem;
+    justify-content: center;
+
+  }
+
   &__hamburger,
   &__hamburger::before,
-  &__hamburger::after {
+  &__hamburger::after
+  {
     display: block;
+    
     background: black;
-    height: 3px;
+    height: 2px;
     width: 3em;
     border-radius: 2px;
-    position: relative;
+    z-index: 1000;
     transition: transform 0.4s ease;
+    
 
     @media only screen and (min-width: 900px){
       display: none;
     }
   }
 
-  &__hamburger::before {
-    content: "";
+  &__hamburger-1{
     position: absolute;
-    top: 1em;
+    transform: rotate(45deg);
   }
 
-  &__hamburger::after {
-    content: "";
-    position: absolute;
-    top: -1em;
+  &__hamburger-2{
+    opacity: 0;
+    
   }
+
+  &__hamburger-3{
+    position: absolute;
+    transform: rotate(-45deg);
+  }
+
+  
+
+
+  
+
+  // &__hamburger::before {
+  //   content: "";
+  //   position: absolute;
+  //   top: 1em;
+  // }
+
+  // &__hamburger::after {
+  //   content: "";
+  //   position: absolute;
+  //   top: -1em;
+  // }
 
   &__checkbox:checked + &__checkbox-label &__hamburger {
     background-color: transparent;
   }
 
   &__checkbox:checked + &__checkbox-label &__hamburger::before {
-    top: 0;
+    // top: 0;
     transform: rotate(45deg);
   }
 
   &__checkbox:checked + &__checkbox-label &__hamburger::after {
-    top: 0;
+    // top: 0;
     transform: rotate(-45deg);
   }
 

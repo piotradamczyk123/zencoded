@@ -10,13 +10,73 @@ function checkVW() {
   return vw;
 }
 
-let hamburger = document.getElementsByClassName("header__checkbox-label")[0];
-
+let checkbox = document.getElementById("header__checkbox");
 let background = document.getElementsByClassName("header__background")[0];
 let links = document.getElementsByClassName("header__link");
 let linksWrapper = document.getElementsByClassName("header__links-wrapper")[0];
 let redBox = document.getElementsByClassName("hero__red-rectangle")[0];
 let blackBox = document.getElementsByClassName("hero__black-rectangle")[0];
+
+let link = document.getElementsByClassName("header__link");
+
+//links smooth scrooling behaviour
+
+let what = document.getElementById("what");
+let how = document.getElementById("how");
+let projects = document.getElementById("projects");
+let contact = document.getElementById("contact");
+
+link[0].addEventListener("click", () => {
+  if (checkVW() >= 900 && toggle == 1) {
+    hamburgerOffAlt();
+    hamburgerAnimationOff();
+    what.scrollIntoView({ behavior: "smooth" });
+  } else {
+    hamburgerOff();
+    hamburgerAnimationOff();
+    what.scrollIntoView({ behavior: "smooth" });
+  }
+});
+
+//auto off when user resizes a window
+
+link[1].addEventListener("click", () => {
+  if (checkVW() >= 900 && toggle == 1) {
+    hamburgerOffAlt();
+    hamburgerAnimationOff();
+    how.scrollIntoView({ behavior: "smooth" });
+  } else {
+    hamburgerOff();
+    hamburgerAnimationOff();
+    how.scrollIntoView({ behavior: "smooth" });
+  }
+});
+
+link[2].addEventListener("click", () => {
+  if (checkVW() >= 900 && toggle == 1) {
+    hamburgerOffAlt();
+    hamburgerAnimationOff();
+    projects.scrollIntoView({ behavior: "smooth" });
+  } else {
+    hamburgerOff();
+    hamburgerAnimationOff();
+    projects.scrollIntoView({ behavior: "smooth" });
+  }
+});
+
+link[3].addEventListener("click", () => {
+  if (checkVW() >= 900 && toggle == 1) {
+    hamburgerOffAlt();
+    hamburgerAnimationOff();
+    contact.scrollIntoView({ behavior: "smooth" });
+  } else {
+    hamburgerOff();
+    hamburgerAnimationOff();
+    contact.scrollIntoView({ behavior: "smooth" });
+  }
+});
+
+//timelines
 
 let toggle = 0;
 
@@ -25,65 +85,142 @@ var heroTL = gsap.timeline();
 var computerTl = gsap.timeline();
 var peopleTl = gsap.timeline();
 
-//Hamburger animation
+// Hamburger animation
 
-hamburger.addEventListener("click", () => {
-  if (toggle == 0) {
-    //ON
-    // console.log("on");
-    toggle = 1;
-    hamburger.classList.add("noclick");
-    linksWrapper.classList.add("click");
-    background.classList.add("visible");
-    gsap.to(links, { opacity: 1, duration: 0.5 });
-    tl.to(background, { opacity: 1, duration: 0 });
+let linkList = document.getElementsByClassName("header__link");
+let hamburger = document.getElementsByClassName("header__hamburger-wrapper");
+let hamburgerLines = document.getElementsByClassName("header__hamburger");
 
-    tl.to(background, {
-      x: 0,
-      duration: 1,
-      ease: "power2",
-      onComplete: () => {
-        hamburger.classList.remove("noclick");
-      },
-    });
-    tl.to(links, { opacity: 1 });
-  } else {
-    //OFF
-    // console.log("off");
-    toggle = 0;
-    hamburger.classList.add("noclick");
-    hamburger.classList.add("visible");
-    let vw = Math.max(
-      document.documentElement.clientWidth || 0,
-      window.innerWidth || 0
-    );
+function hamburgerAnimationOn() {
+  hamburgerLines[0].classList.add("header__hamburger-1");
+  hamburgerLines[1].classList.add("header__hamburger-2");
+  hamburgerLines[2].classList.add("header__hamburger-3");
+}
 
-    tl.to(background, { x: -vw, duration: 1, ease: "power2" });
-    tl.to(background, {
-      opacity: 0,
-      duration: 0,
-      onComplete: () => {
-        background.classList.add("hidden");
-        background.classList.remove("visible");
-        hamburger.classList.remove("noclick");
-        linksWrapper.classList.remove("click");
+function hamburgerAnimationOff() {
+  hamburgerLines[0].classList.remove("header__hamburger-1");
+  hamburgerLines[1].classList.remove("header__hamburger-2");
+  hamburgerLines[2].classList.remove("header__hamburger-3");
+}
 
-        window.addEventListener("resize", () => {
-          var width = document.documentElement.clientWidth;
-          // console.log(width);
-          if (width >= 900) {
-            linksWrapper.classList.add("click");
-            gsap.to(links, { opacity: 1, duration: 0 });
-            window.removeEventListener("resize", () => {});
-          } else {
-            gsap.to(links, { opacity: 0, duration: 0 });
-          }
-        });
-      },
-    });
-    gsap.to(links, { opacity: 0, duration: 0.5 });
+hamburger[0].addEventListener("click", () => {
+  if (toggle == 0 && checkVW() <= 900) {
+    hamburgerAnimationOn();
+    hamburgerOn();
+  } else if (toggle == 1 && checkVW() <= 900) {
+    hamburgerAnimationOff();
+    hamburgerOff();
   }
 });
+
+//controlling opacity of links based on media query
+
+const mediaQuery = window.matchMedia("(max-width: 900px)");
+
+function handleDesktopChange(e) {
+  // Check if the media query is true
+  if (e.matches) {
+    hamburgerAnimationOff();
+    hamburgerOffAlt();
+    gsap.to(links, { opacity: 0, duration: 0.5 });
+  } else {
+    hamburgerAnimationOff();
+    hamburgerOffAlt();
+    gsap.to(links, { opacity: 1, duration: 0.5 });
+  }
+}
+
+// Register event listener
+mediaQuery.addListener(handleDesktopChange);
+
+// Initial check
+handleDesktopChange(mediaQuery);
+
+function hamburgerOn() {
+  //ON
+  // console.log("on");
+  toggle = 1;
+
+  //prevention of breaking an animation
+  hamburger[0].classList.add("noclick");
+
+  background.classList.add("visible");
+  gsap.to(links, { opacity: 1, duration: 0.5 });
+  tl.to(background, { opacity: 1, duration: 0 });
+
+  tl.to(background, {
+    x: 0,
+    duration: 1,
+    ease: "power2",
+    onComplete: () => {
+      linksWrapper.classList.add("click");
+      hamburger[0].classList.remove("noclick");
+    },
+  });
+  if (checkVW() <= 900) {
+    tl.to(links, { opacity: 1 });
+  }
+}
+
+function hamburgerOff() {
+  //OFF
+  // console.log("off");
+
+  toggle = 0;
+  linkList[0].removeEventListener("click", () => {});
+
+  hamburger[0].classList.add("noclick");
+
+  let vw = Math.max(
+    document.documentElement.clientWidth || 0,
+    window.innerWidth || 0
+  );
+
+  tl.to(background, { x: -vw, duration: 1, ease: "power2" });
+  tl.to(background, {
+    opacity: 0,
+    duration: 0,
+    onComplete: () => {
+      background.classList.add("hidden");
+      background.classList.remove("visible");
+      hamburger[0].classList.remove("noclick");
+      linksWrapper.classList.remove("click");
+    },
+  });
+
+  if (checkVW() <= 900) {
+    gsap.to(links, { opacity: 0, duration: 0.5 });
+  }
+}
+
+//alternative off, doesn't have a opacity change of links
+
+function hamburgerOffAlt() {
+  //OFF
+  // console.log("off");
+
+  toggle = 0;
+  linkList[0].removeEventListener("click", () => {});
+
+  hamburger[0].classList.add("noclick");
+
+  let vw = Math.max(
+    document.documentElement.clientWidth || 0,
+    window.innerWidth || 0
+  );
+
+  tl.to(background, { x: -vw, duration: 1, ease: "power2" });
+  tl.to(background, {
+    opacity: 0,
+    duration: 0,
+    onComplete: () => {
+      background.classList.add("hidden");
+      background.classList.remove("visible");
+      hamburger[0].classList.remove("noclick");
+      linksWrapper.classList.remove("click");
+    },
+  });
+}
 
 //INTRO Animation
 
