@@ -266,6 +266,9 @@ body {
   justify-content: space-between;
   width: 90%;
 }
+.header__logo-link {
+  text-decoration: none;
+}
 .header__logo-svg {
   width: 160px;
 }
